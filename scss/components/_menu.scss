@@ -1,0 +1,42 @@
+.menu{
+    .menu-label{
+        font-size: 1.25rem;
+        color: $black;
+        font-weight: 700;
+        letter-spacing: 0;
+    }
+    .menu-list{
+        li{
+            position: relative;
+            padding-left: 1rem;
+            opacity: .5;
+            color: $gray-900;
+            &::after{
+                border: 2px solid $gray-900;
+                border-radius: 1px;
+                border-left: 0;
+                border-top: 0;
+                content: " ";
+                display: block;
+                margin-top: -.2em;
+                pointer-events: none;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: rotate(-45deg);
+                transform-origin: center;
+                height: .5em;
+                width: .5em;
+            }
+            a{
+                color: inherit;
+                &:hover{
+                    background: $gray-200;
+                }
+            }
+            &.active{
+                opacity: 1;
+            }
+        }
+    }
+}

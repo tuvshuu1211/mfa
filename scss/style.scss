@@ -1,0 +1,25 @@
+// Core variables and mixins
+@import "base/animation.scss";
+@import "base/variables.scss";
+@import "base/background.scss";
+@import "base/mixins.scss";
+
+// Global CSS
+@import "base/page.scss";
+
+// Components
+@import "components/accordian.scss";
+@import "components/breadcrumb.scss";
+@import "components/buttons.scss";
+@import "components/navbar.scss";
+@import "components/menu.scss";
+@import "components/blog.scss";
+
+// Layout
+@import "layout/main-header.scss";
+@import "layout/services.scss";
+@import "layout/news.scss";
+@import "layout/timeline.scss";
+@import "layout/team.scss";
+@import "layout/contact.scss";
+@import "layout/footer.scss";

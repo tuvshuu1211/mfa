@@ -1,0 +1,73 @@
+section.main-header{
+  position: relative;
+
+  .hero-nav{
+    background: inherit;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    img{
+      width: auto;
+    }
+    h1{
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      color: $white;
+      transition: transform .2s ease-out;
+    }
+    &.online-archive{
+      background: $primary;
+    }
+    &.reading-room{
+      background: $red;
+    }
+    &.museum{
+      background: $purple;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      z-index: -1;
+      bottom: 10px;
+      border-radius: inherit;
+      width: 95%;
+      height: 50%;
+      opacity: .5;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      z-index: -1;
+      bottom: 0;
+      border-radius: inherit;
+      width: 90%;
+      height: 50%;
+      opacity: .2;
+    }
+    //hover effects
+    &:hover{
+      h1{
+        animation: elastic-drop .7s 1 alternate cubic-bezier(.5,2,.33,1) forwards;
+      }
+      &::before{
+        animation: elastic-drop .7s 1 alternate cubic-bezier(.5,2,.33,1) forwards .1s;
+      }
+      &::after{
+        animation: elastic-drop .7s 1 alternate cubic-bezier(.5,2,.33,1) forwards .2s;
+      }
+    }
+
+  }
+}

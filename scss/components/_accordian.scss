@@ -1,0 +1,45 @@
+.accordions{
+    border: 1px solid $gray-200;
+    border-radius: 6px;
+    overflow: hidden;
+    .accordion{
+        display: block;
+        position: relative;
+        .accordion-header{
+            cursor: pointer;
+            background: white;
+            border-bottom: 1px solid $gray-200;
+            padding: 1rem 2rem;
+            display: flex;
+
+            i{
+                color: inherit;
+                margin-right: 1rem;
+                line-height: 1.8rem;
+            }
+        }
+        .accordion-body{
+            overflow: hidden;
+            background: white;
+            padding: 0 4rem;
+            border-bottom: 1px solid $gray-200;
+            transition: all .3s ease-in-out;
+            transform-origin: top center;
+            .accordion-content{
+                padding: 2rem 0;
+            }
+        }
+        &.is-active{
+            background: $primary;
+            .accordion-header{
+                background: $primary;
+                color: white;
+            }
+            .accordion-body{
+            //     display: block;
+            // transform: scaleY(1);
+            //     transition: all 1s ease-in-out;
+            }
+        }
+    }
+}

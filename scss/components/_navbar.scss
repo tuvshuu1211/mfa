@@ -1,0 +1,44 @@
+.navbar{
+  @include body-font;
+  padding: .5rem 0;
+  border-bottom: 1px solid $gray-300;
+  .navbar-brand{
+    width: 222px;
+    display: block;
+    img{
+      max-width: 100%;
+      height: auto;
+      max-height: none;
+    }
+  }
+  .navbar-start{
+    margin-left: 1rem;
+    .navbar-item{
+      margin-top: .5rem;
+      @include body-font;
+
+      .navbar-link:not(.is-arrowless){
+        &::after{
+          border: 2px solid $black;
+          border-radius: 1px;
+          border-right: 0;
+          border-top: 0;
+          content: " ";
+          display: block;
+          margin-top: -.3em;
+          pointer-events: none;
+          position: absolute;
+          top: 50%;
+          transform: rotate(-45deg);
+          transform-origin: center;
+          height: .5em;
+          width: .5em;
+        } 
+    }
+    &:hover{
+      background: none;
+      color: $primary;
+    }
+    }
+  }
+}
