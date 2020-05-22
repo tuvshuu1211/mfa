@@ -1,6 +1,6 @@
 .menu{
     .menu-label{
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         color: $black;
         font-weight: 700;
         letter-spacing: 0;
@@ -8,7 +8,7 @@
     .menu-list{
         li{
             position: relative;
-            padding-left: 1rem;
+            padding: .5rem 0 .5rem 1rem;
             opacity: .5;
             color: $gray-900;
             &::after{

@@ -31,6 +31,7 @@ function browserSync(done) {
     server: {
       baseDir: "./"
     },
+    //host: 192.168.1.182,
     port: 3000
   });
   done();

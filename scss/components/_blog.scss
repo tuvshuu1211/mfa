@@ -28,10 +28,17 @@
                 font-size: 1rem;
             }
             .blog-title{
+                color: $black;
                 font-size: 2rem;
                 line-height: 2rem;
                 font-weight: 700;
                 margin: .5rem 0 2rem;
+            }
+            .blog-date{
+                color: $gray-400;
+                i{
+                    margin-right: .5rem;
+                }
             }
         }
     

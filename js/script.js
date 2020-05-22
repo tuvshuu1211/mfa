@@ -39,14 +39,24 @@
     }
 })
 
-$('.accordion').on('click', function(){
-  $(this).each(function(){
-    if($('.accordion').hasClass('is-active')){
-      $('.accordion').removeClass('is-active');
-    }
-    $(this).toggleClass('is-active');
-    
+  $(document).ready(function(){
+    $('.accordion').each(function(){
+      if($(this).is('.is-active')){
+        $(this).find('.accordion-body').slideDown();
+      }
+    })
   })
-})
+  $(".accordion-header").click(function(){
+    $('.accordion').each(function(){
+      $(this).removeClass('is-active')
+      if($(this).not('.is-active')){
+        $(this).find('.accordion-body').slideUp();
+      }
+    })
+      $(this).next().slideDown();
+      $(this).parent().toggleClass('is-active');
+
+  });
+
 
 })(jQuery); // End of use strict

@@ -24,6 +24,12 @@
   <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="vendor/owl.carousel/assets/owl.theme.default.css" rel="stylesheet">
 
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+
   <!-- Custom styles for this template -->
   <link href="css/style.min.css" rel="stylesheet">
 
@@ -96,64 +102,37 @@
     </div>
   </nav>
 
-  <section class="hero ">
-    <div class="hero-body">
-      <div class="container">
-          <nav class="breadcrumb" aria-label="breadcrumbs">
-              <ul>
-                <li><a href="#">Нүүр хуудас</a></li>
-                <li><a href="#">Бидний тухай</a></li>
-                <li class="is-active"><a href="#" aria-current="page">Бүтэц</a></li>
-              </ul>
-            </nav>
-      </div>
-      <div class="container">
-          <div class="page-action">
-              <div class="page-title">
-                  <h1>Бүтэц</h1>
-                </div>
+  <section class="mfa-museum hero">
 
-                <div class="print"><i class="fab fa fa-print"></i></div>
-          </div>
+      <div id="panorama">
+        <div id="controls">
+          <div class="ctrl" id="pan-up">&#9650;</div>
+          <div class="ctrl" id="pan-down">&#9660;</div>
+          <div class="ctrl" id="pan-left">&#9664;</div>
+          <div class="ctrl" id="pan-right">&#9654;</div>
+          <div class="ctrl" id="zoom-in">&plus;</div>
+          <div class="ctrl" id="zoom-out">&minus;</div>
+          <div class="ctrl" id="fullscreen">&#x2922;</div>
       </div>
-      
-      <div class="container">
-        <div class="columns">
-          <div class="column is-one-quarters">
-              <aside class="sidebar box menu">
-                  <p class="side-label">
-                    Биднтий тухай
-                  </p>
-                  <ul class="menu-list">
-                    <li class="active"><a>Бүтэц</a></li>
-                    <li><a>Бидний түүх</a></li>
-                    <li><a>Дүрэм, журам</a></li>
-                    <li><a>Архивын хамт олон</a></li>
-                    <li><a>Түншлэл</a></li>
-                  </ul>
-                </aside>
-          </div>
-          <div class="column is-three-quarters">
-            <div class="box">
-                <div class="content p-lg">
-                    <h1>Hello World</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
-                    <h2>Second level</h2>
-                    <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
-                    <ul>
-                      <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-                      <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-                      <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
-                      <li>Ut non enim metus.</li>
-                    </ul>
-                  </div>
+      </div>
+
+  </section>
+
+  <section class="section gallery">
+    <div class="container is-fullhd">
+      <div class="columns  is-multiline is-desktop js-content-contain">
+        <a href="#" class="column is-2 js-repeat">
+          <div class="gallery-box">
+            <div class="mfa-gallery">
+              <img src="img/portfolio/01-thumbnail.jpg" alt="">
             </div>
+            <h1 class="mfa-gallery-title">Lorem ipsum dolor sit.</h1>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
-
+ 
   <footer class="mfa-footer">
     <div class="container">
       <div class="footer-inner">
@@ -190,9 +169,64 @@
   <!-- Owl carousel -->
   <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
 
+  <script>
+    // Create viewer
+viewer = pannellum.viewer('panorama', {
+    "type": "multires",
+    "multiRes": {
+        "preview": "img/portfolio/01-full.jpg",
+        "basePath": "https://pannellum.org/images/multires/library",
+        "path": "/%l/%s%y_%x",
+        "fallbackPath": "/fallback/%s",
+        "extension": "jpg",
+        "tileResolution": 512,
+        "maxLevel": 6,
+        "cubeResolution": 8432
+    }
+});
+// Make buttons work
+document.getElementById('pan-up').addEventListener('click', function(e) {
+    viewer.setPitch(viewer.getPitch() + 10);
+});
+document.getElementById('pan-down').addEventListener('click', function(e) {
+    viewer.setPitch(viewer.getPitch() - 10);
+});
+document.getElementById('pan-left').addEventListener('click', function(e) {
+    viewer.setYaw(viewer.getYaw() - 10);
+});
+document.getElementById('pan-right').addEventListener('click', function(e) {
+    viewer.setYaw(viewer.getYaw() + 10);
+});
+document.getElementById('zoom-in').addEventListener('click', function(e) {
+    viewer.setHfov(viewer.getHfov() - 10);
+});
+document.getElementById('zoom-out').addEventListener('click', function(e) {
+    viewer.setHfov(viewer.getHfov() + 10);
+});
+document.getElementById('fullscreen').addEventListener('click', function(e) {
+    viewer.toggleFullscreen();
+});
+    </script>
+
   <!-- Custom scripts for this template -->
   <script src="js/script.min.js"></script>
+<script>
+  var galleryLists;
+  var content = $('.js-repeat');
+  function clone(){
+    galleryLists = [];
+    for (let i = 0; i <29; i++) {
+      galleryLists.push(content)
+    }
 
+    galleryLists.forEach(list => {
+      var a = $('.js-content-contain');
+      b = list.clone()
+      a.append(b)
+    })
+  }
+  clone();
+</script>
 </body>
 
 </html>

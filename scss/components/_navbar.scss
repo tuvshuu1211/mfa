@@ -1,7 +1,7 @@
 .navbar{
   @include body-font;
-  padding: .5rem 0;
-  border-bottom: 1px solid $gray-300;
+  background: $gov-blue;
+  border-top: 1rem solid #0F2E50;
   .navbar-brand{
     width: 222px;
     display: block;
@@ -14,12 +14,17 @@
   .navbar-start{
     margin-left: 1rem;
     .navbar-item{
-      margin-top: .5rem;
+      padding: 1.5rem .75rem;
       @include body-font;
+      color: $gray-300;
+
+      .navbar-link{
+        color: $gray-300;
+      }
 
       .navbar-link:not(.is-arrowless){
         &::after{
-          border: 2px solid $black;
+          border: 2px solid $gray-300;
           border-radius: 1px;
           border-right: 0;
           border-top: 0;
@@ -37,8 +42,22 @@
     }
     &:hover{
       background: none;
-      color: $primary;
+      color: white;
+    }
+    .navbar-dropdown{
+      .navbar-item{
+        padding: .5rem .75rem;
+        color: $gray-900;
+      }
     }
     }
   }
+}
+
+.navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link {
+  background: none;
+  color: white;
+}
+.navbar-dropdown {
+  border-top: 2px solid lighten($gov-blue, 5%);
 }

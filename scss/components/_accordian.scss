@@ -6,6 +6,9 @@
         display: block;
         position: relative;
         .accordion-header{
+            & > *{
+                pointer-events: none;
+            }
             cursor: pointer;
             background: white;
             border-bottom: 1px solid $gray-200;
@@ -16,6 +19,7 @@
                 color: inherit;
                 margin-right: 1rem;
                 line-height: 1.8rem;
+                transition: transform .3s ease;
             }
         }
         .accordion-body{
@@ -23,8 +27,7 @@
             background: white;
             padding: 0 4rem;
             border-bottom: 1px solid $gray-200;
-            transition: all .3s ease-in-out;
-            transform-origin: top center;
+            display: none;
             .accordion-content{
                 padding: 2rem 0;
             }
@@ -34,6 +37,9 @@
             .accordion-header{
                 background: $primary;
                 color: white;
+                i{
+                    transform: rotate(-90deg);
+                }
             }
             .accordion-body{
             //     display: block;
