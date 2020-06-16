@@ -9,6 +9,7 @@
 
 // Components
 @import "components/accordian.scss";
+@import "components/book-slider.scss";
 @import "components/breadcrumb.scss";
 @import "components/buttons.scss";
 @import "components/navbar.scss";
@@ -16,9 +17,17 @@
 @import "components/form.scss";
 @import "components/museum.scss";
 @import "components/blog.scss";
+@import "components/table.scss";
+@import "components/picture-record.scss";
 
 // Layout
+@import "layout/aside.scss";
 @import "layout/main-header.scss";
+@import "layout/archive-list.scss";
+@import "layout/section.scss";
+@import "layout/online-archive.scss";
+@import "layout/online-archive-type.scss";
+@import "layout/paper-record.scss";
 @import "layout/services.scss";
 @import "layout/news.scss";
 @import "layout/timeline.scss";

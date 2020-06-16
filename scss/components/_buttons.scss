@@ -24,3 +24,13 @@
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
   }
 }
+
+.button.is-red{
+  background: $red;
+  color: $white;
+  border-color: transparent;
+  &:hover{
+    background: lighten($red, 5%);
+    color: $white;
+  }
+}

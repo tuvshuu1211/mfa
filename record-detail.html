@@ -97,8 +97,8 @@
     </div>
   </nav>
 
-  <section class="hero ">
-    <div class="hero-body">
+  <section class="hero">
+    <div class="hero-body p-t-lg">
       <div class="container">
           <nav class="breadcrumb" aria-label="breadcrumbs">
               <ul>
@@ -108,101 +108,94 @@
               </ul>
             </nav>
       </div>
-      <div class="container">
-          <div class="page-action">
-              <div class="page-title">
-                  <h1>Санал хүсэлт</h1>
-                </div>
-
-                <!-- <div class="print"><i class="fab fa fa-print"></i></div> -->
-          </div>
-      </div>
       
       <div class="container">
-        <div class="columns is-centered">
-
+        <div class="columns">
           <div class="column is-three-quarters">
-            <div class="box">
+
+            <div class="page-action">
+              <div class="page-title">
+                  <h1>АНУ-н дэд ерөнхийлөгчийг угтан авч байгаа нь</h1>
+                </div>
+    
+                <div class="print"><i class="fab fa fa-print"></i></div>
+          </div>
+
+            <div class="content-box">
                 <div class="content p-lg">
-                  <form class="feedback-form" action="">
-                    <div class="field">
-                      <label class="label">Овог</label>
-                      <div class="control">
-                        <input class="input" type="text" placeholder="Овог нэр">
-                      </div>
-                    </div>  
-                    <div class="field">
-                      <label class="label">Нэр</label>
-                      <div class="control">
-                        <input class="input" type="text" placeholder="Өөрийн нэр">
-                      </div>
-                    </div>  
-                    <div class="field">
-                      <label class="label">И-Майл</label>
-                      <div class="control">
-                        <input class="input" type="text" placeholder="Цахим шуудан хаяг">
-                      </div>
-                    </div>  
-                    <div class="field">
-                      <label class="label">Утас</label>
-                      <div class="control">
-                        <input class="input" type="text" placeholder="Утасны дугаар">
-                      </div>
-                    </div>  
-                    <div class="field">
-                      <label class="label">Байгууллагын нэр</label>
-                      <div class="control">
-                        <input class="input" type="text" placeholder="Албан Байгууллагын нэр">
-                      </div>
-                    </div>  
-                    
-                    <div class="field">
-                      <label class="label">Санал хүсэлт</label>
-                      <div class="control">
-                        <textarea class="textarea" placeholder="Санал хүсэлт бичих"></textarea>
-                      </div>
-                    </div>
-                    
-                    <div class="checkbox-list is-column p-b-lg">
-                      <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        Цаасан суурьтай баримт
-                      </label>
-                      <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        Гэрээ хэлэлцээр
-                      </label>
-                      <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        Ярилцлага, хэлсэн үг
-                      </label>
-                      <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        Ном
-                      </label>
-                      <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        Дуу, дүрс бичлэг
-                      </label>
-                    </div>
-                    
-                    <div class="field is-grouped">
-                      <div class="control">
-                        <button class="button is-link">Submit</button>
-                      </div>
-                      <div class="control">
-                        <button class="button is-link is-light">Cancel</button>
-                      </div>
-                    </div>
-                  </form>
+                  <table class="table mfa-table">
+                    <tbody>
+                      <tr>
+                        <th>Дугаар</th>
+                        <td>1190100120000</td>
+                      </tr>
+                      <tr>
+                        <th>Зургийн агуулга</th>
+                        <td>АНУ-н дэд ерөнхийлөгчийг угтан авч байгаа нь</td>
+                      </tr>
+                      <tr>
+                        <th>Сэдвийн гарчиг</th>
+                        <td>АНУ-н дэд ерөнхийлөгч Хенри Уэльс БНМАУ-д айлчилсан нь</td>
+                      </tr>
+                      <tr>
+                        <th>Түлхүүр үг</th>
+                        <td>ЗСБНХУ орос улс ; морин дивизийн лагер байгуулах; газар бэлчээр олгох; орон сууц албанд хураах; протокол</td>
+                      </tr>
+                      <tr>
+                        <th>Огноо</th>
+                        <td>1922.5.31 - 1922.5.31</td>
+                      </tr>
+                      <tr>
+                        <th>Нэмэлт тэмдэглэл</th>
+                        <td>Тэмдэглэлгүй</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="picture-record">
+
+<canvas id="myCanvas" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+window.onload = function() {
+  var canvas = document.getElementById('myCanvas');
+  var ctx = canvas.getContext('2d');
+  var img = new Image();
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth;
+  img.onload = function() {
+    ctx.drawImage(img, 10, 10);
+    ctx.beginPath();
+    ctx.moveTo(30, 96);
+    ctx.lineTo(70, 66);
+    ctx.lineTo(103, 76);
+    ctx.lineTo(170, 15);
+    ctx.stroke();
+  };
+  img.src = 'https://mdn.mozillademos.org/files/5395/backdrop.png';
+};
+</script>
+                  </div>
                   </div>
             </div>
           </div>
+
+          <div class="column is-one-quarters">
+            <aside class="sidebar box menu">
+                <p class="side-label">
+                  Хамааралтай баримт
+                </p>
+                <div class="aside-related-records js-content-contain">
+                  <a class="aside-related-record js-repeat">
+                      <div class="record-name">Баримтын гарчиг</div>
+                      <div class="record-id">11901033504</div>
+                      <div class="record-date">2013/12/14</div>
+                  </a>
+                </div>
+              </aside>
+        </div>
         </div>
       </div>
     </div>
@@ -247,6 +240,23 @@
   <!-- Custom scripts for this template -->
   <script src="js/script.min.js"></script>
 
+  <script>
+    var galleryLists;
+    var content = $('.js-repeat');
+    function clone(){
+      galleryLists = [];
+      for (let i = 0; i < 5; i++) {
+        galleryLists.push(content)
+      }
+  
+      galleryLists.forEach(list => {
+        var a = $('.js-content-contain');
+        b = list.clone()
+        a.append(b)
+      })
+    }
+    clone();
+  </script>
 </body>
 
 </html>

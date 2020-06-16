@@ -17,7 +17,7 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Owl Carousel styles -->
@@ -31,12 +31,13 @@
 
 <body id="page-top">
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar white" role="navigation" aria-label="main navigation">
     
     <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="index.html">
-        <img src="img/mfa-light.png">
+      <a class="" href="index.html">
+        <img src="img/mfa-logo.png">
+<span> Гадаад харилцааны төв Архив</span>
       </a>
   
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -75,11 +76,17 @@
           </div>
         </div>
         <a href="blog-list.html" class="navbar-item">
-            Үйл явдлууд
-          </a>
-        <a href="faq.html" class="navbar-item">
-            Түгээмэл асуулт
-          </a>
+          Үйл явдлууд
+        </a>
+      <a href="online-archive.html" class="navbar-item">
+          Онлайн архив
+        </a>
+      <a href="#" class="navbar-item">
+          Уншлагын танхим
+        </a>
+      <a href="museum.html" class="navbar-item">
+          Мүзей
+        </a>
       </div>
     
         <div class="navbar-end">
@@ -96,8 +103,8 @@
     </div>
   </nav>
 
-  <section class="hero ">
-    <div class="hero-body">
+  <section class="hero">
+    <div class="hero-body p-t-lg">
       <div class="container">
           <nav class="breadcrumb" aria-label="breadcrumbs">
               <ul>
@@ -107,21 +114,20 @@
               </ul>
             </nav>
       </div>
+      
       <div class="container">
-          <div class="page-action">
+        <div class="columns">
+          <div class="column is-three-quarters">
+
+            <div class="page-action">
               <div class="page-title">
                   <h1>Бүтэц</h1>
                 </div>
-
+    
                 <div class="print"><i class="fab fa fa-print"></i></div>
           </div>
-      </div>
-      
-      <div class="container">
-        <div class="columns flex-center">
-          
-          <div class="column is-four-fifths">
-            <div class="box">
+
+            <div class="content-box">
                 <div class="content p-lg">
                   <div class="blog-img image is-16by9">
                     <img src="img/portfolio/02-full.jpg" alt="">
@@ -139,6 +145,24 @@
                   </div>
             </div>
           </div>
+
+          <div class="column is-one-quarters">
+            <aside class="sidebar box menu">
+                <p class="side-label">
+                  Үйл явдалууд
+                </p>
+                <div class="aside-blog-lists js-content-contain">
+                  <div class="aside-blog-list js-repeat">
+                    <div class="blog-img"><img src="img/portfolio/01-full.jpg" alt=""></div>
+                    <div class="blog-desc">
+                      <div class="category">Category</div>
+                      <div class="title">Lorem ipsum dolor sit.</div>
+                      <div class="date"><i class="fab fa fa-calendar-alt"></i> 2013/12/14</div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+        </div>
         </div>
       </div>
     </div>
@@ -148,7 +172,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-start">
-          <div class="footer-brand"><img src="img/mfa-light.png" alt=""></div>
+          <div class="footer-brand"><img src="img/mfa-logo.png" alt=""></div>
         </div>
         <div class="footer-right">
           <div class="footer-nav">
@@ -182,6 +206,24 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/script.min.js"></script>
+
+  <script>
+    var galleryLists;
+    var content = $('.js-repeat');
+    function clone(){
+      galleryLists = [];
+      for (let i = 0; i < 5; i++) {
+        galleryLists.push(content)
+      }
+  
+      galleryLists.forEach(list => {
+        var a = $('.js-content-contain');
+        b = list.clone()
+        a.append(b)
+      })
+    }
+    clone();
+  </script>
 
 </body>
 

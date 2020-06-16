@@ -21,13 +21,13 @@ section.main-header{
       color: $white;
       transition: transform .2s ease-out;
     }
-    &.online-archive{
+    &.main-online-archive{
       background: $primary;
     }
-    &.reading-room{
+    &.main-reading-room{
       background: $red;
     }
-    &.museum{
+    &.main-museum{
       background: $purple;
     }
     &::before{

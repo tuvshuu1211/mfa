@@ -1,0 +1,16 @@
+.mfa-table{
+    tbody{
+        tr{
+            td,th{
+                padding: 1rem 2rem;
+                border: none;
+            }
+            td{
+                padding-left: 2rem;
+            }
+            &:nth-child(odd){
+                background-color: darken($gray-100, 3%);
+            }
+        }
+    }
+}
