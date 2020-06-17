@@ -34,8 +34,8 @@ h6 {
     color: $gray-600;
   }
 }
-.img-protect{
-  pointer-events: none;
+.list-style-none{
+  list-style: none;
 }
 
 .page-section {
@@ -63,6 +63,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0 .5rem;
+  margin-bottom: .5rem;
 
   .page-title{
     h1{

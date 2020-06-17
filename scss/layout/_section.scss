@@ -29,10 +29,11 @@
       }
       p.hero-subtitle{
           @include body-font;
-          font-size: 1rem;
-          font-weight: 400;
-          color: rgba($color: #fff, $alpha: 0.6);
+          font-size: 1.125rem;
+          font-weight: 300;
+          color: rgba($color: #fff, $alpha: 1);
           z-index: 1;
           text-shadow: 0 4px 10px rgba($color: #000000, $alpha: 0.8);
+          text-align: center;
       }
   }

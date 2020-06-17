@@ -47,7 +47,7 @@
     </div>
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a href="online-archive.html" class="navbar-item">
+        <a href="index.html" class="navbar-item">
           Нүүр
         </a>
 
@@ -87,8 +87,8 @@
     </div>
   </nav>
 
-  <section class="hero">
-    <div class="hero-body p-t-lg">
+  <section class="hero ">
+    <div class="hero-body">
       <div class="container">
           <nav class="breadcrumb" aria-label="breadcrumbs">
               <ul>
@@ -98,73 +98,59 @@
               </ul>
             </nav>
       </div>
+      <div class="container">
+          <div class="page-action">
+              <div class="page-title">
+                  <h1>Сайтын бүтэц</h1>
+                </div>
+
+                <!-- <a onClick="window.print()" class="print"><i class="fab fa fa-print"></i></a> -->
+          </div>
+      </div>
       
       <div class="container">
-        <div class="columns">
-          <div class="column is-three-quarters">
+        <div class="columns is-left">
 
-            <div class="page-action">
-              <div class="page-title">
-                  <h1>АНУ-н дэд ерөнхийлөгчийг угтан авч байгаа нь</h1>
-                </div>
-    
-                <a onClick="window.print()" class="print"><i class="fab fa fa-print"></i></a>
-          </div>
-
-            <div class="content-box">
-                <div class="content p-lg">
-                  <table class="table mfa-table">
-                    <tbody>
-                      <tr>
-                        <th>Дугаар</th>
-                        <td>1190100120000</td>
-                      </tr>
-                      <tr>
-                        <th>Зургийн агуулга</th>
-                        <td>АНУ-н дэд ерөнхийлөгчийг угтан авч байгаа нь</td>
-                      </tr>
-                      <tr>
-                        <th>Сэдвийн гарчиг</th>
-                        <td>АНУ-н дэд ерөнхийлөгч Хенри Уэльс БНМАУ-д айлчилсан нь</td>
-                      </tr>
-                      <tr>
-                        <th>Түлхүүр үг</th>
-                        <td>ЗСБНХУ орос улс ; морин дивизийн лагер байгуулах; газар бэлчээр олгох; орон сууц албанд хураах; протокол</td>
-                      </tr>
-                      <tr>
-                        <th>Огноо</th>
-                        <td>1922.5.31 - 1922.5.31</td>
-                      </tr>
-                      <tr>
-                        <th>Нэмэлт тэмдэглэл</th>
-                        <td>Тэмдэглэлгүй</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  <div class="picture-record">
-                    <div class="img-protect">
-                      <img src="img/portfolio/01-full.jpg" alt="">
-                    </div>
-                  </div>
+          <div class="column is-one-quarter">
+            <div class="box">
+              
+              <h2 class="title is-4 p-t-md">Үндсэн цэс</h2>
+              <div class="sitemap menu">
+                    <ul class="menu-list list-style-none">
+                      <li><a>Нүүр</a></li>
+                      <li>
+                        <a>Бидний тухай</a>
+                        <ul>
+                          <li><a>Бүтэц</a></li>
+                          <li><a>Бидний түүх</a></li>
+                          <li><a>Архивын хамт олон</a></li>
+                          <li><a>Түншлэл</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Үйл явдлууд</a></li>
+                      <li><a>Түгээмэл асуулт</a></li>
+                      <li><a>Онлайн архив</a></li>
+                      <li><a>Уншлагын танхим</a></li>
+                      <li><a>Музей</a></li>
+                    </ul>
                   </div>
             </div>
           </div>
 
-          <div class="column is-one-quarters">
-            <aside class="sidebar box menu">
-                <p class="side-label">
-                  Хамааралтай баримт
-                </p>
-                <div class="aside-related-records js-content-contain">
-                  <a class="aside-related-record js-repeat">
-                      <div class="record-name">Баримтын гарчиг</div>
-                      <div class="record-id">11901033504</div>
-                      <div class="record-date">2013/12/14</div>
-                  </a>
-                </div>
-              </aside>
-        </div>
+          <div class="column is-one-quarter">
+            <div class="box">
+              
+              <h2 class="title is-4 p-t-md">Онлайн архив</h2>
+              <div class="sitemap menu">
+                    <ul class="menu-list list-style-none">
+                      <li><a>Нүүр</a></li>
+                      <li><a>Бидний тухай</a></li>
+                      <li><a>Холбоо барих</a></li>
+                      <li><a>Түгээмэл асуулт</a></li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -209,23 +195,6 @@
   <!-- Custom scripts for this template -->
   <script src="js/script.min.js"></script>
 
-  <script>
-    var galleryLists;
-    var content = $('.js-repeat');
-    function clone(){
-      galleryLists = [];
-      for (let i = 0; i < 5; i++) {
-        galleryLists.push(content)
-      }
-  
-      galleryLists.forEach(list => {
-        var a = $('.js-content-contain');
-        b = list.clone()
-        a.append(b)
-      })
-    }
-    clone();
-  </script>
 </body>
 
 </html>

@@ -83,6 +83,7 @@ function accHandler(){
   margin: 0,
   autoHeight:true,
   items: 1,
+  nav: false,
   navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
  })
 
