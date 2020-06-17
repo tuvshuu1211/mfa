@@ -13,3 +13,19 @@
     z-index: -1;
   }
 }
+
+.pdf-action{
+  margin-top: 1rem;
+  i{
+    color: $red;
+    border:1px solid $gray-200;
+    border-radius: 6px;
+    padding: .875rem;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  a{
+    color: $red;
+    font-weight: bold;
+  }
+}

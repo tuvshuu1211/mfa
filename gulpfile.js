@@ -62,9 +62,12 @@ function modules() {
   // Font Awesome Webfonts
   var fontAwesomeWebfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
     .pipe(gulp.dest('./vendor/fontawesome-free/webfonts'));
-  // jQuery Easing
+  // Owl
   var owlCarousel = gulp.src('./node_modules/owl.carousel/dist/**/*')
     .pipe(gulp.dest('./vendor/owl.carousel'));
+  // Media Player
+  var media = gulp.src('./node_modules/mediaelement/src/**/*')
+    .pipe(gulp.dest('./vendor/mediaelement'));
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
     .pipe(gulp.dest('./vendor/jquery-easing'));

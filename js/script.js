@@ -1,6 +1,13 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  $(document).ready(function()
+{
+    $('.img-protect').bind('contextmenu', function(e){
+        return false;
+    }); 
+});
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -60,6 +67,23 @@ function accHandler(){
     })
     
   })
+ });
+
+ $('.museum-gallery').owlCarousel({
+  loop: true,
+  nav: true,
+  margin: 0,
+  autoHeight:true,
+  items: 1,
+  navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+ })
+ $('.faq-carousel').owlCarousel({
+  loop: true,
+  nav: true,
+  margin: 0,
+  autoHeight:true,
+  items: 1,
+  navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
  })
 
  $('.book-slider').owlCarousel({

@@ -1,0 +1,15 @@
+@media print {
+
+  nav, section, footer, aside{
+    display: none;
+  }
+  .sidebar{
+    display: none;
+  }
+  .content-box{
+    width: 100%;
+  }
+  .column{
+      width: 100% !important;
+  }
+}

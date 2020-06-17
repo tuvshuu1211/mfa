@@ -19,6 +19,7 @@
 @import "components/blog.scss";
 @import "components/table.scss";
 @import "components/picture-record.scss";
+@import "components/media-record.scss";
 
 // Layout
 @import "layout/aside.scss";
@@ -35,3 +36,6 @@
 @import "layout/sidebar.scss";
 @import "layout/contact.scss";
 @import "layout/footer.scss";
+
+// print
+@import "base/print.scss";
