@@ -1,0 +1,13 @@
+.bg-white{
+    background-color: white;
+  }
+.bg-light{
+background-color: $gray-100;
+}
+.bg-textured{
+background-repeat: no-repeat;
+background-color: $gray-200;
+background-image: url(../img/overlay-bg.png);
+background-blend-mode: overlay;
+background-size: cover;
+}

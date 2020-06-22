@@ -22,6 +22,17 @@
     }
   });
 
+  $(".modal-button").click(function() {
+    var target = $(this).data("target");
+    $("html").addClass("is-clipped");
+    $(target).addClass("is-active");
+ });
+ 
+ $(".modal-close, .modal-background").click(function() {
+    $("html").removeClass("is-clipped");
+    $(this).parent().removeClass("is-active");
+ });
+
 
   $('.main-news-slider').owlCarousel({
     loop:true,
@@ -77,13 +88,13 @@ function accHandler(){
   items: 1,
   navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
  })
- $('.faq-carousel').owlCarousel({
+ $('.header-slider').owlCarousel({
   loop: true,
   nav: true,
   margin: 0,
   autoHeight:true,
   items: 1,
-  nav: false,
+  nav: true,
   navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
  })
 

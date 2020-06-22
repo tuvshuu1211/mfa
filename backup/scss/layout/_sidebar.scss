@@ -1,0 +1,21 @@
+aside.sidebar{
+        .side-label{
+            font-size: 1.125rem;
+            color: $black;
+            font-weight: 800;
+            letter-spacing: 0;
+            position: relative;
+            padding-left: 1.7rem;
+            margin-bottom: 1rem;
+            &::after{
+                position: absolute;
+                content: '';
+                background: $red;
+                width: 10px;
+                height: 21px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+}

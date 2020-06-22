@@ -1,0 +1,108 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  @include body-font;
+  background: $gray-100;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  @include heading-font;
+  span{
+    font-size: .815rem;
+    font-weight: 400;
+    color: $gray-600;
+  }
+}
+.list-style-none{
+  list-style: none;
+}
+
+.page-section {
+  padding: 100px 0;
+  h1.section-heading {
+    font-size: 2.25rem;
+    margin-top: 0;
+    color: $black;
+    font-weight: 800;
+    @include serif-font;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h3.section-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: none;
+    text-align: center;
+    color: $gray-600;
+  }
+}
+
+.page-action{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 .5rem;
+  margin-bottom: .5rem;
+
+  .page-title{
+    h1{
+      font-size: 2rem;
+      color: $gray-900;
+    }
+  }
+  .print{
+    cursor: pointer;
+    background: $white;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: .5rem;
+    border:1px solid $gray-300;
+    border-radius: 8px;
+    color: $gray-600;
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+  color: $white;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+  color: $white;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}

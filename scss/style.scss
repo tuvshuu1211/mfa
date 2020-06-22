@@ -8,6 +8,7 @@
 @import "base/page.scss";
 
 // Components
+@import "components/main-search.scss";
 @import "components/accordian.scss";
 @import "components/book-slider.scss";
 @import "components/breadcrumb.scss";
@@ -24,6 +25,7 @@
 
 // Layout
 @import "layout/aside.scss";
+@import "layout/header-slider.scss";
 @import "layout/main-header.scss";
 @import "layout/archive-list.scss";
 @import "layout/section.scss";

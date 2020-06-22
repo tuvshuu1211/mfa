@@ -1,0 +1,31 @@
+.paper-record{
+  background-image: url(../img/paper-record.png);
+  z-index: 0;
+
+  &::after{
+    background: rgba($color: #000000, $alpha: .5);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.pdf-action{
+  margin-top: 1rem;
+  i{
+    color: $red;
+    border:1px solid $gray-200;
+    border-radius: 6px;
+    padding: .875rem;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  a{
+    color: $red;
+    font-weight: bold;
+  }
+}

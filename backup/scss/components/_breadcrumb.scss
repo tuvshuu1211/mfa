@@ -1,0 +1,35 @@
+// Breadscrumb style
+
+.breadcrumb {
+    ul{
+        li{
+            position: relative;
+            a{
+                color: $gray-500;
+                padding: 0 1em;
+            }
+            &::before {
+                border: 2px solid $gray-900;
+                border-radius: 1px;
+                border-left: 0;
+                border-top: 0;
+                content: " ";
+                display: block;
+                margin-top: -.2em;
+                pointer-events: none;
+                position: absolute;
+                top: 50%;
+                left: -5px;
+                transform: rotate(-45deg);
+                transform-origin: center;
+                height: .5em;
+                width: .5em;
+            }
+            &:first-child{
+                &::before{
+                display: none;
+                }
+            }
+        }
+    }
+}

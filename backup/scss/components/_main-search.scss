@@ -1,0 +1,26 @@
+.online-archive-search{
+    width: 100%;
+    .main-search-types{
+        .main-search-type{
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            background: $gray-500;
+            &.active{
+                background: $primary;
+                color: white;
+                font-weight: 700;
+                &:hover{
+                    background: lighten($primary, 5%);
+                }
+            }
+            a{
+                color: white;
+            }
+            &:hover{
+                background: lighten($gray-500, 5%);
+            }
+        }
+    }
+}

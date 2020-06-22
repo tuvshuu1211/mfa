@@ -1,0 +1,43 @@
+// Core variables and mixins
+@import "base/animation.scss";
+@import "base/variables.scss";
+@import "base/background.scss";
+@import "base/mixins.scss";
+
+// Global CSS
+@import "base/page.scss";
+
+// Components
+@import "components/main-search.scss";
+@import "components/accordian.scss";
+@import "components/book-slider.scss";
+@import "components/breadcrumb.scss";
+@import "components/buttons.scss";
+@import "components/navbar.scss";
+@import "components/menu.scss";
+@import "components/form.scss";
+@import "components/museum.scss";
+@import "components/blog.scss";
+@import "components/table.scss";
+@import "components/picture-record.scss";
+@import "components/media-record.scss";
+@import "components/sitemap.scss";
+
+// Layout
+@import "layout/aside.scss";
+@import "layout/main-header.scss";
+@import "layout/archive-list.scss";
+@import "layout/section.scss";
+@import "layout/online-archive.scss";
+@import "layout/online-archive-type.scss";
+@import "layout/paper-record.scss";
+@import "layout/services.scss";
+@import "layout/news.scss";
+@import "layout/timeline.scss";
+@import "layout/team.scss";
+@import "layout/sidebar.scss";
+@import "layout/contact.scss";
+@import "layout/footer.scss";
+
+// print
+@import "base/print.scss";

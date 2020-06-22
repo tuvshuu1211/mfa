@@ -87,19 +87,15 @@
     </div>
   </nav>
 
-  <section class="page-section hero hero-header-md paper-record">
-    <div class="hero-body ">
+  <section class="hero">
       <div class="container">
-        <div class="hero-inner">
-          <div class="hero-title">Түгээмэл Асуулт Хариулт</div>
-          <div class="faq-carousel owl-carousel owl-theme text-center">
-            <p class="hero-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, enim.</p>
-            <p class="hero-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, enim.</p>
-            <p class="hero-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, enim.</p>
-          </div>
+        <div class="header-slider owl-carousel owl-theme">
+          <div class="slider-item"><img src="img/slider/1.jpg" alt=""></div>
+          <div class="slider-item"><img src="img/slider/2.jpg" alt=""></div>
+          <div class="slider-item"><img src="img/slider/3.jpg" alt=""></div>
+          <div class="slider-item"><img src="img/slider/4.jpg" alt=""></div>
         </div>
       </div>
-    </div>
   </section>
 
   <section class="hero">
@@ -107,71 +103,98 @@
       <div class="container">
         <div class="columns">
           <div class="column is-one-quarters">
-            <aside class="sidebar box advanced-search">
-              <div class="accordion is-active">
-                <div class="accordion-header has-icon">
-                  <h1>Хайлт хийх <i class="fab fa fa-search m-l-md"></i></h1>
-                </div>
-                <div class="accordion-body m-t-lg" style="display: none;">
-                  <form action="">
-                    <div class="field">
-                      <label class="label">Хайх утга</label>
-                      <div class="control">
-                        <input class="input" type="text" placeholder="Хайх утга">
+            <div class="online-archive-search">
+            <div class="main-search-types">
+              <div class="main-search-type active"><a href="online-archive.html" class="search-link">Энгийн хайлт</a></div>
+              <div class="main-search-type"><a href="#" class="search-link">Нарийвчилсан хайлт</a></div>
+            </div>
+            <div class="sidebar box p-r-lg">
+
+                  <form action="" class="m-t-lg">
+                    <div class="field is-horizontal">
+                      <div class="field-label is-normal">
+                        <label class="label">Type of Item</label>
+                      </div>
+                      <div class="field-body">
+                        <div class="field">
+                          <div class="control">
+                            <label class="radio">
+                              <input type="radio" name="type">
+                              All
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="type" checked>
+                              Papers presented to Parliament (PARL)
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="type">
+                              Non-PARL
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                                    
-                    <div class="field">
-                      <label class="label">Хайлтын төрөл</label>
-                      <div class="control">
-                        <span class="select  is-fullwidth">
-                          <select>
-                            <option selected>Country</option>
-                            <option>Select dropdown</option>
-                            <option>With options</option>
-                          </select>
-                        </span>
+
+                    <div class="field is-horizontal m-t-lg">
+                      <div class="field-label is-normal">
+                        <label class="label">Хайх утга</label>
+                      </div>
+                      <div class="field-body">
+                        <div class="field">
+                          <p class="control has-icons-right">
+                            <input class="input" type="email" placeholder="Хайх утга">
+                            <span class="icon is-small is-right">
+                              <i class="fas fa-search"></i>
+                            </span>
+                          </p>
+                          <div class="control m-t-md m-b-lg">
+                            <label class="radio">
+                              <input type="radio" name="type">
+                              All words
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="type" checked>
+                              Any word
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="type">
+                              Exact Pharse
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="field ">
-                      <label class="label">Улс</label>
-                      <div class="control has-icons-left ">
-                        <span class="select  is-fullwidth">
-                          <select>
-                            <option selected>Country</option>
-                            <option>Select dropdown</option>
-                            <option>With options</option>
-                          </select>
-                        </span>
-                        <span class="icon is-small is-left">
-                          <i class="fas fa-globe"></i>
-                        </span>
+      
+                    <div class="field is-horizontal">
+                      <div class="field-label is-normal">
+                        <label class="label">Эхлэх</label>
+                      </div>
+                      <div class="field-body">
+                        <div class="field">
+                          <p class="control has-icons-right">
+                            <input class="input" type="email" placeholder="Эхлэх огноо">
+                            <span class="icon is-small is-right">
+                              <i class="fas fa-calendar"></i>
+                            </span>
+                          </p>
+                          <p class="help">dd/mm/yyyy or mm/yyyy or yyyy)</p>
+                          <p class="help">*Date range is not applicable to Oral History Interviews</p>
+                        </div>
+                        <div class="field-label is-normal">
+                          <label class="label">Дуусах</label>
+                        </div>
+                        <div class="field">
+                          <p class="control has-icons-right">
+                            <input class="input" type="email" placeholder="Дуусах огноо">
+                            <span class="icon is-small is-right">
+                              <i class="fas fa-calendar"></i>
+                            </span>
+                          </p>
+                        </div>
                       </div>
                     </div>
-                    <div class="field ">
-                      <label class="label">Байгууллагын нэр</label>
-                      <div class="control">
-                        <span class="select  is-fullwidth">
-                          <select>
-                            <option selected>Choose</option>
-                            <option>Select dropdown</option>
-                            <option>With options</option>
-                          </select>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="field ">
-                      <label class="label">Баримт төрөл</label>
-                      <div class="control">
-                        <span class="select  is-fullwidth">
-                          <select>
-                            <option selected>Choose</option>
-                            <option>Select dropdown</option>
-                            <option>With options</option>
-                          </select>
-                        </span>
-                      </div>
-                    </div>
+                    
+                    <!-- Search button -->
                     <div class="field is-grouped is-grouped-centered  p-t-md">
                       <p class="control">
                         <a class="button is-red p-l-lg p-r-lg">
@@ -180,80 +203,77 @@
                       </p>
                     </div>
                   </form>
-                  <hr>
-                  <form action="">
-                    <h2 class="m-b-md">Огноо  <span>(Жил - Он - Сар)</span></h2>
-
-                    <div class="field">
-                      <p class="control has-icons-right">
-                        <input class="input" type="email" placeholder="Эхлэх огноо">
-                        <span class="icon is-small is-right">
-                          <i class="fas fa-calendar"></i>
-                        </span>
-                      </p>
-                    </div>
-
-                    <div class="field">
-                      <p class="control has-icons-right">
-                        <input class="input" type="email" placeholder="Дуусах огноо">
-                        <span class="icon is-small is-right">
-                          <i class="fas fa-calendar"></i>
-                        </span>
-                      </p>
-                    </div>
-                    <div class="field is-grouped is-grouped-centered  p-t-md">
-                      <p class="control">
-                        <a class="button is-red p-l-lg p-r-lg">
-                          Хайх
-                        </a>
-                      </p>
-                    </div>
-                  </form>
-                </div>
+                  
               </div>
-              
-            </aside>
-              <aside class="sidebar box menu">
-                  <p class="side-label">
-                    Архивын төрөл
-                  </p>
-                  <ul class="menu-list">
-                    <li class="active"><a>Цаасан баримт</a></li>
-                    <li><a>Цаасан баимт /1890-1935/</a></li>
-                    <li><a>Зураг</a></li>
-                    <li><a>Ишлэл ба хэвлэлийн мэдээ</a></li>
-                    <li><a>Ном товхимол</a></li>
-                    <li><a>Кино, Дүрс бичлэг, Дуу авиа</a></li>
-                  </ul>
-                </aside>
-              <aside class="sidebar box aside-faq">
-                  <p class="side-label">
-                    Түгээмэл асуулт хариулт
-                  </p>
-                  <ul class="faq-list">
-                    <li><a><i class="fab fa fa-question-circle"></i> Celebrity thrives on controversy, especially in moments of heightened national, racial and moral tension?</a></li>
-                    <li><a><i class="fab fa fa-question-circle"></i> Celebrity thrives on controversy, especially in moments of heightened national, racial and moral tension?</a></li>
-                    <li><a><i class="fab fa fa-question-circle"></i> Celebrity thrives on controversy, especially in moments of heightened national, racial and moral tension?</a></li>
-                    <li><a><i class="fab fa fa-question-circle"></i> Celebrity thrives on controversy, especially in moments of heightened national, racial and moral tension?</a></li>
-                   
-                  </ul>
-                </aside>
+            </div>
+            </div>
           </div>
-          <div class="column is-three-quarters js-content-contain">
-            <a href="record-detail.html" class="mfa-archive-list content-box js-repeat">
-              <div class="record-img">
-                <img src="img/online-archive//pdf.png" alt="">
-              </div>
-              <div class="record-desc">
-                <div class="category">Category</div>
-                <div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                <div class="short-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolorem amet numquam vitae obcaecati assumenda incidunt officia perferendis reiciendis distinctio? </div>
-              </div>
-            </a>
-          </div>
+
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="">
+    <div class="hero-body">
+      <div class="container">
+        <div class="box aside-faq">
+        
+          <h2 class="side-label">
+            Түгээмэл асуулт хариулт
+          </h2>
+          <ul class="faq-list">
+            <li><a class="modal-button" data-target = "#modal"><i class="fab fa fa-question-circle"></i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere maxime sunt possimus, perferendis illo explicabo corrupti. Doloremque minus dignissimos molestias debitis accusantium dolor, pariatur, expedita fugiat doloribus, harum labore alias?</a></li>
+            <li><a class="modal-button" data-target = "#modal"><i class="fab fa fa-question-circle"></i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere maxime sunt possimus, perferendis illo explicabo corrupti. Doloremque minus dignissimos molestias debitis accusantium dolor, pariatur, expedita fugiat doloribus, harum labore alias?</a></li>
+            <li><a class="modal-button" data-target = "#modal"><i class="fab fa fa-question-circle"></i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere maxime sunt possimus, perferendis illo explicabo corrupti. Doloremque minus dignissimos molestias debitis accusantium dolor, pariatur, expedita fugiat doloribus, harum labore alias?</a></li>
+            <li><a class="modal-button" data-target = "#modal"><i class="fab fa fa-question-circle"></i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere maxime sunt possimus, perferendis illo explicabo corrupti. Doloremque minus dignissimos molestias debitis accusantium dolor, pariatur, expedita fugiat doloribus, harum labore alias?</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+
+      <div id = "modal" class = "modal">
+        <div class = "modal-background"></div>
+        <div class = "modal-content">
+           <div class = "box">
+              <article class = "media">
+                 <div class = "media-left">
+                    <figure class = "image is-64x64">
+                       <img src = "https://www.tutorialspoint.com/bootstrap/images/64.jpg" alt="Image">
+                    </figure>
+                 </div>
+                 <div class = "media-content">
+                    <div class = "content">
+                       <p>
+                          <strong>Will Smith</strong> 
+                          <small>@wsmith</small> 
+                          <small>31m</small>
+                          <br>
+                          This is simple text. This is simple text. 
+                          This is simple text. This is simple text.
+                       </p>
+                    </div>
+                    <nav class = "level">
+                       <div class = "level-left">
+                          <a class = "level-item">
+                             <span class = "icon is-small">
+                                <i class = "fa fa-reply"></i>
+                             </span>
+                          </a>
+                          <a class = "level-item">
+                             <span class = "icon is-small">
+                                <i class = "fa fa-retweet"></i>
+                             </span>
+                          </a>
+                       </div>
+                    </nav>
+                    
+                 </div>
+              </article>
+           </div>
+        </div>
+        <button class = "modal-close is-large" aria-label = "close"></button>
+     </div>
   </section>
 
   <footer class="mfa-footer">
@@ -261,8 +281,6 @@
       <div class="footer-inner">
         <div class="footer-start">
           <div class="footer-brand"><img src="img/mfa-light.png" alt=""></div>
-        </div>
-        <div class="footer-right">
           <div class="footer-nav">
             <ul class="nav-items">
               <li class="nav-item"><a href="contact.html" class="nav-link">Бидэнтэй холбогдох</a></li>
@@ -270,6 +288,25 @@
               <li class="nav-item"><a href="faq.html" class="nav-link">Түгээмэл асуулт</a></li>
               <li class="nav-item"><a href="sitemap.html" class="nav-link">Сайтын бүтэц</a></li>
             </ul>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="columns">
+            <div class="column">
+              <h2>Холбоо барих</h2>
+              <p>Дарга: 263196</p>
+              <p>Мэргэжилтэн: 262123, 262197, 262427</p>
+              <p>Програмист: 262034</p>
+              <p>Факс: 976-11-322127</p>
+            </div>
+
+            <div class="column">
+              <h2>Холбоо барих</h2>
+              <p>Өнөөдөр: <b>4,314</b></p>
+              <p>Энэ 7 хоног: <b>4,314</b></p>
+              <p>Энэ сар: <b>47,399</b></p>
+              <p>Нийт: <b>2,292,132</b></p>
+            </div>
           </div>
         </div>
       </div>
@@ -296,7 +333,7 @@
   <!-- Custom scripts for this template -->
   <script src="js/script.min.js"></script>
 
-  <script>
+  <!-- <script>
     var galleryLists;
     var content = $('.js-repeat');
     function clone(){
@@ -312,7 +349,7 @@
       })
     }
     clone();
-  </script>
+  </script> -->
 
 </body>
 
