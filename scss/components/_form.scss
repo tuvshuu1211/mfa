@@ -66,25 +66,6 @@
 .online-archive-search{
 
   .field-body{
-    &.is-vertical{
-      display: block;
-      label{
-        display: block;
-        margin: 1.5rem 0;
-        &:first-child{
-          margin-top: .5rem;
-        }
-        &.checkbox{
-          display: flex;
-          align-items: center;
-          input{
-            height: 1rem;
-            width: 1rem;
-            margin-right: 1rem;
-          }
-        }
-      }
-    }
     label{
       &.checkbox, &.radio{
         display: inline-flex;
@@ -97,6 +78,53 @@
           height: 1rem;
           width: 1rem;
           margin: 0 1rem;
+        }
+      }
+    }
+    &.is-vertical{
+      display: block;
+      label{
+        display: block;
+        margin: 1.5rem 0;
+        &:first-child{
+          margin-top: .5rem;
+          margin-left: 0;
+        }
+        &.checkbox{
+          display: flex;
+          align-items: center;
+          input{
+            height: 1rem;
+            width: 1rem;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.field-body{
+  &.is-vertical{
+    display: block;
+    label{
+      display: block;
+      margin: 1.5rem 0;
+      &:first-child{
+        margin-top: .5rem;
+        margin-left: 0;
+      }
+      &.checkbox{
+        display: flex;
+        align-items: center;
+        input{
+          height: 1rem;
+          width: 1rem;
+          margin-right: 1rem;
+        }
+        .count{
+          position: absolute;
+          right: 0;
         }
       }
     }
