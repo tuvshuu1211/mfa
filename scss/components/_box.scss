@@ -1,0 +1,14 @@
+.box{
+    border-radius: 0 !important;
+    .box-heading{
+        border-bottom: 1px solid $gray-300;
+        padding-bottom: .75rem;
+
+        h2{
+            font-size: 1.125rem;
+        }
+        &.text-right{
+            text-align: right;
+        }
+      }
+}

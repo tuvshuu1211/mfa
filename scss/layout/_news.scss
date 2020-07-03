@@ -1,60 +1,12 @@
-// Mfa News styles
-
-.main-news-slider{
-  width: 100%;
-  position: relative;
-
-  .owl-nav{
-    position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-    [class*='owl-']{
-      background: none;
-      outline: none;
-      &:hover{
-        background: none;
-        i{
-          color: $primary;
-        }
-      }
-      &.disabled{
-        opacity: .2;
-      }
-    }
-    
-    .owl-prev{
-      position: absolute;
-      left: -3rem;
-      i{
-        font-size: 2rem;
-        color: $black;
-      }
-    }
-    .owl-next{
-      position: absolute;
-      right: -3rem;
-      i{
-        font-size: 2rem;
-        color: $black;
-      }
-    }
-  }
-}
-
 .mfa-news-box{
   display: block;
   position: relative;
   width: 100%;
 
   .mfa-news-img{
-    border-radius: 12px;
+    border-radius: 0px;
     margin-bottom: 1.5rem;
-    height: 16rem;
+    height: 180px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -86,6 +38,19 @@
       img{
         transform: scale(1.1);
       }
+    }
+  }
+
+  &.event-news{
+    display: flex;
+    .mfa-news-img{
+      width: 130px;
+      height: 90px;
+      border-radius: 0;
+    }
+    .mfa-news-description{
+      margin-left: 1rem;
+      flex-shrink: 3;
     }
   }
 }
