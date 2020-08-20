@@ -1,0 +1,57 @@
+.about-slider{
+    .slider-item{
+        height: 450px;
+        position: relative;
+        .slider-img{
+            width: 100%;
+            background: $gray-800;
+            display: flex;
+            justify-content: center;
+        }
+        .slider-caption{
+            position: absolute;
+            bottom: 0;
+            background: $gov-blue;
+            color: white;
+            padding: 1rem 2rem;
+            width: 100%;
+        }
+        img{
+            width: auto;
+            height: 100%;
+        }
+    }
+    .owl-nav{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        padding: 0 1rem;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        .owl-prev, .owl-next{
+            border: none;
+            outline: none;
+            i{
+                color: white;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .owl-dot{
+        position: absolute;
+        top: 50%;
+    }
+}
+.owl-thumbs{
+    display: flex;
+    flex-wrap: wrap;
+    .owl-thumb-item{
+        width: calc(100% / 6);
+        margin-right: 1px;
+        opacity: .33;
+        &.active{
+            opacity: 1;
+        }
+    }
+}

@@ -88,6 +88,17 @@ function accHandler(){
   items: 1,
   navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
  })
+ $('.about-slider').owlCarousel({
+  loop: false,
+  nav: true,
+  margin: 0,
+  autoHeight:true,
+  items: 1,
+  thumbs: true,
+  thumbsPrerendered: true,
+  navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+ })
+ 
  $('.header-slider').owlCarousel({
   loop: true,
   nav: true,

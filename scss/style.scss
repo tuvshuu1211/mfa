@@ -20,12 +20,13 @@
 @import "components/form.scss";
 @import "components/museum.scss";
 @import "components/blog.scss";
-@import "components/table.scss";
 @import "components/picture-record.scss";
 @import "components/media-record.scss";
 @import "components/sitemap.scss";
+@import "components/table.scss";
 
 // Layout
+@import "layout/about.scss";
 @import "layout/aside.scss";
 @import "layout/header-slider.scss";
 @import "layout/main-header.scss";
@@ -34,6 +35,7 @@
 @import "layout/online-archive.scss";
 @import "layout/online-archive-type.scss";
 @import "layout/paper-record.scss";
+@import "layout/speech-record.scss";
 @import "layout/services.scss";
 @import "layout/news.scss";
 @import "layout/timeline.scss";

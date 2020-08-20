@@ -63,6 +63,10 @@
       @include body-font;
       color: inherit;
 
+      i{
+        margin-right: 10px;
+      }
+
       .navbar-link{
         color: inherit;
       }

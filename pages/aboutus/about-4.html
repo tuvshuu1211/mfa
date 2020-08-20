@@ -11,20 +11,20 @@
   <title>MFA</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bulma/css/bulma.min.css" rel="stylesheet">
+  <link href="../../vendor/bulma/css/bulma.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Owl Carousel styles -->
-  <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="vendor/owl.carousel/assets/owl.theme.default.css" rel="stylesheet">
+  <link href="../../vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../../vendor/owl.carousel/assets/owl.theme.default.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="../../css/style.min.css" rel="stylesheet">
 
 </head>
 
@@ -44,7 +44,7 @@
     <div class="container">
     <div class="navbar-brand">
       <a class="" href="/index.html">
-        <img src="img/mfa-logo.png">
+        <img src="../../img/mfa-logo.png">
         <span> Гадаад харилцааны төв Архив</span>
       </a>
   
@@ -59,7 +59,6 @@
           <a href="/index.html" class="navbar-item">
             Нүүр
           </a>
-
           <div class="navbar-item has-dropdown is-hoverable">
             <a href="pages/about/about.html" class="navbar-link">
               Бидний тухай
@@ -83,17 +82,34 @@
               </a>
             </div>
           </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a href="#" class="navbar-link">
+              Архивын үйлчилгээ
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a href="/pages/service/service-1.html" class="navbar-item">
+                Бидний үзүүлэх үйлчилгээ
+              </a>
+              <a href="/pages/service/service-2.html" class="navbar-item">
+                Уншлагын танхим
+              </a>
+              <a href="/pages/service/service-3.html" class="navbar-item">
+                Онлайн архив
+              </a>
+              <a href="/pages/service/service-4.html" class="navbar-item">
+                Үйлчилгээний хөлс
+              </a>
+            </div>
+          </div>
           <a href="blog-list.html" class="navbar-item">
               Үйл явдлууд
             </a>
+          <a href="/museum.html" class="navbar-item">
+            Дипломат албаны музей
+            </a>
           <a href="pages/online/index.html" class="navbar-item">
               Онлайн архив
-            </a>
-          <a href="reading-room.html" class="navbar-item">
-          Уншлагын танхим
-        </a>
-          <a href="museum.html" class="navbar-item">
-              Музей
             </a>
         </div>
     
@@ -108,58 +124,69 @@
           <nav class="breadcrumb" aria-label="breadcrumbs">
               <ul>
                 <li><a href="#">Нүүр хуудас</a></li>
-                <li><a href="#">Уншлагын танхим</a></li>
-                <li class="is-active"><a href="#" aria-current="page">Уншлагын танхимын тухай</a></li>
+                <li><a href="#">Бидний тухай</a></li>
+                <li class="is-active"><a href="#" aria-current="page">Бүтэц</a></li>
               </ul>
             </nav>
       </div>
-      <div class="container">
-          <div class="page-action">
-              <div class="page-title">
-                  <h1>Уншлагын танхимын тухай</h1>
-                </div>
-
-                <a onClick="window.print()" class="print"><i class="fab fa fa-print"></i></a>
-          </div>
-      </div>
+      
       
       <div class="container">
         <div class="columns">
           <div class="column is-one-quarters">
               <aside class="sidebar box menu">
                   <p class="side-label">
-                    Уншлагын танхим
+                    Биднтий тухай
                   </p>
                   <ul class="menu-list">
-                    <li class="active"><a href="reading-room.html">Уншлагын танхимын тухай</a></li>
-                    <li><a href="reading-room.html">Уншлагын танхимд нэвтрэх</a></li>
-                    <li><a href="reading-room.html">Манай үйлчилгээ</a></li>
-                    <li><a href="reading-room.html">Заавар зөвлөмж ба Үйлчилгээний нөхцөл</a></li>
+                    <li><a href="about.html">Бүрэн эрх / Mandate</a></li>
+                    <li class="active"><a href="about-1.html">Бидний түүх / Our history</a></li>
+                    <li><a href="about-2.html">Бидний зорилго / Our Roles</a></li>
+                    <li><a href="about-3.html">Зурагт түүх / Photo history</a></li>
+                    <li><a href="about-3.html">Хэвлэсэн бүтээл / Publications</a></li>
+                    <li class="active"><a href="about-4.html">Түншлэл / Partnership</a></li>
+                    <li><a href="about-4.html">Эрх зүйн баримтууд /   Laws/Regulations</a></li>
+                    <li><a href="about-4.html">Холбоо барих / Contact us</a></li>
                   </ul>
                 </aside>
           </div>
-          <div class="column is-three-quarters">
+          <div class="column is-three-quarters" data-slider-id="1">
             <div class="content-box">
                 <div class="content p-lg">
-                  <p>The Archives Reading Room (ARR) is the primary physical space where researchers and members of the public seek access to archival records. Our duty officers address enquiries and attend to the research needs of the public, academics and government agencies. Researchers can request to view and reproduce copies of records subject to prior approval if this is required from transferring agencies and donors and in compliance with NAS’ terms. The ARR holds reference copies of records in microfilm and digital formats which include Straits Settlements Records, private records, maps, building plans, cemetery, marriage and school records and records from overseas archives.</p>
-
-                  <p>Please submit a request via Archives Online (<a href="http://www.nas.gov.sg/archivesonline/">www.nas.gov.sg/archivesonline/</a>) by clicking the Request to View button and fill out the online form before visiting the Archives Reading Room. You may also write to <a href="mailto:nas@nlb.gov.sg">nas@nlb.gov.sg</a> before visiting to enquire about our holdings and availability of records at least 5 days before your visit.</p>
-                  
-                  <p>The Archives Reading Room is located at 1 Canning Rise, Singapore 179868.</p>
-                  
-                  <p><strong>Opening Hours:</strong></p>
-                  
-                  <p>Mondays - Sundays: 10am – 9pm</p>
-                  
-                  <p>Closed on Public Holidays</p>
-                  
-                  <p><strong>Staffed Service Hours:</strong></p>
-                  
-                  <p>Weekdays: 10am – 6:30pm</p>
-                  
-                  <p>Staff service not available on Saturdays, Sundays, Public Holidays and substituted Public Holidays</p>
-                  
-                  <p>Closed at 1pm on eves of Christmas, New Year and Chinese New Year</p>
+                  <div class="owl-carousel about-slider" data-slider-id="1">
+                    <div class="slider-item">
+                      <div class="slider-img">
+                        <img src="../../img/portfolio/02-full.jpg" alt="">
+                      </div>
+                      <div class="slider-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, architecto.</div>
+                    </div>
+                    <div class="slider-item">
+                      <div class="slider-img">
+                        <img src="../../img/portfolio/02-full.jpg" alt="">
+                      </div>
+                      <div class="slider-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, architecto.</div>
+                    </div>
+                    <div class="slider-item">
+                      <div class="slider-img">
+                        <img src="../../img/portfolio/02-full.jpg" alt="">
+                      </div>
+                      <div class="slider-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, architecto.</div>
+                    </div>
+                    <div class="slider-item">
+                      <div class="slider-img">
+                        <img src="../../img/portfolio/02-full.jpg" alt="">
+                      </div>
+                      <div class="slider-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, architecto.</div>
+                    </div>
+                </div>
+                <div class="owl-thumbs" data-slider-id="1">
+                    <div class="owl-thumb-item"><img src="../../img/portfolio/02-thumbnail.jpg" alt=""></div>
+                    <div class="owl-thumb-item"><img src="../../img/portfolio/02-thumbnail.jpg" alt=""></div>
+                    <div class="owl-thumb-item"><img src="../../img/portfolio/02-thumbnail.jpg" alt=""></div>
+                    <div class="owl-thumb-item"><img src="../../img/portfolio/02-thumbnail.jpg" alt=""></div>
+                </div>
+                
+                
                   </div>
             </div>
           </div>
@@ -172,7 +199,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-start">
-          <div class="footer-brand"><img src="img/mfa-light.png" alt=""></div>
+          <div class="footer-brand"><img src="../../img/mfa-light.png" alt=""></div>
           <div class="footer-nav">
             <ul class="nav-items">
               <li class="nav-item"><a href="contact.html" class="nav-link">Бидэнтэй холбогдох</a></li>
@@ -209,20 +236,17 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/jquery/jquery.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+  <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Owl carousel -->
-  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../../vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../../vendor/owl.thumbs/owl.carousel2.thumbs.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/script.min.js"></script>
+  <script src="../../js/script.min.js"></script>
 
 </body>
 

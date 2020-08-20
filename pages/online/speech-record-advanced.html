@@ -11,20 +11,20 @@
   <title>MFA</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bulma/css/bulma.min.css" rel="stylesheet">
+  <link href="../../vendor/bulma/css/bulma.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Owl Carousel styles -->
-  <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="vendor/owl.carousel/assets/owl.theme.default.css" rel="stylesheet">
+  <link href="../../vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../../vendor/owl.carousel/assets/owl.theme.default.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="../../css/style.min.css" rel="stylesheet">
 
 </head>
 
@@ -44,7 +44,7 @@
     <div class="container">
     <div class="navbar-brand">
       <a class="" href="/index.html">
-        <img src="img/mfa-logo.png">
+        <img src="../../img/mfa-logo.png">
         <span> Гадаад харилцааны төв Архив</span>
       </a>
   
@@ -57,43 +57,20 @@
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
           <a href="/index.html" class="navbar-item">
-            Нүүр
+            Цахим хуудас
           </a>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a href="pages/about/about.html" class="navbar-link">
-              Бидний тухай
-            </a>
-    
-            <div class="navbar-dropdown">
-              <a href="about.html" class="navbar-item">
-                Бүтэц
-              </a>
-              <a class="navbar-item">
-                Бидний түүх
-              </a>
-              <a class="navbar-item">
-                Дүрэм, журам
-              </a>
-              <a class="navbar-item">
-                Архивын хамт олон
-              </a>
-              <a class="navbar-item">
-                Түншлэл
-              </a>
-            </div>
-          </div>
-          <a href="blog-list.html" class="navbar-item">
-              Үйл явдлууд
-            </a>
-          <a href="pages/online/index.html" class="navbar-item">
+          <a href="online-archive.html" class="navbar-item">
               Онлайн архив
             </a>
-          <a href="reading-room.html" class="navbar-item">
-          Уншлагын танхим
+          <a href="#" class="navbar-item">
+              Харилцааны баримтын тухай
+            </a>
+          <a href="#" class="navbar-item">
+          Түгээмэл асуулт хариулт
         </a>
-          <a href="museum.html" class="navbar-item">
-              Музей
+          <a href="#" class="navbar-item">
+            <i class="fab fa fa-shopping-cart"></i>  Сагс (5)
             </a>
         </div>
     
@@ -102,23 +79,23 @@
     </div>
   </nav>
 
-  <div class="container">
-  <section class="hero hero-header-sm online-archive">
+  <section class="page-section bg-white hero p-t-none">
     <div class="hero-body">
-        <div class="hero-inner">
-          <div class="hero-title">Нарийвчилсан хайлт хийх</div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <section class="page-section bg-white hero p-t-sm">
-    <div class="hero-body">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="#">Нүүр хуудас</a></li>
+              <li><a href="#">Бидний тухай</a></li>
+              <li class="is-active"><a href="#" aria-current="page">Lorem ipsum dolor sit amet.</a></li>
+            </ul>
+          </nav>
+    </div>
       <div class="container is-centered">
         <div class="online-archive-search">
           <div class="main-search-types">
-            <div class="main-search-type"><a href="pages/online/index.html" class="search-link">Энгийн хайлт</a></div>
+            <div class="main-search-type"><a href="online-archive.html" class="search-link">Энгийн хайлт</a></div>
             <div class="main-search-type active"><a href="#" class="search-link">Нарийвчилсан хайлт</a></div>
+            <div class="main-search-type"><a href="speechers.html" class="search-link">Хүний нэрээр А-Я</a></div>
           </div>
           <div class="box">
             <form action="" class="p-r-lg">
@@ -137,41 +114,45 @@
                   </div>
                 </div>
               </div>
-
-              <div class="field is-horizontal">
+              <div class="field is-horizontal m-t-lg">
                 <div class="field-label is-normal">
-                  <label class="label">Эхлэх</label>
+                  <label class="label">Үг хэлсэн хүн</label>
                 </div>
                 <div class="field-body">
                   <div class="field">
-                    <p class="control has-icons-right">
-                      <input class="input" type="email" placeholder="Эхлэх огноо">
-                      <span class="icon is-small is-right">
-                        <i class="fas fa-calendar"></i>
-                      </span>
-                    </p>
-                    <p class="help">dd/mm/yyyy or mm/yyyy or yyyy)</p>
-                    <p class="help">*Date range is not applicable to Oral History Interviews</p>
-                  </div>
-                  <div class="field-label is-normal">
-                    <label class="label">Дуусах</label>
-                  </div>
-                  <div class="field">
-                    <p class="control has-icons-right">
-                      <input class="input" type="email" placeholder="Дуусах огноо">
-                      <span class="icon is-small is-right">
-                        <i class="fas fa-calendar"></i>
-                      </span>
-                    </p>
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Select dropdown</option>
+                          <option>With options</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-
+              <div class="field is-horizontal m-t-lg">
+                <div class="field-label is-normal">
+                  <label class="label">Албан тушаал</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Select dropdown</option>
+                          <option>With options</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
                 <div class="field is-horizontal">
                   <div class="field-label is-normal">
-                    <label class="label">Databases</label>
+                    <label class="label">Төрөл</label>
                   </div>
-                  <div class="field-body is-vertical">
+                  <div class="field-body is-vertical is-multiline advanced-type">
                     <label class="checkbox">
                       <input type="checkbox">
                       Цаасан баримт
@@ -207,6 +188,34 @@
                     </label>
                   </div>
                 </div>
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Эхлэх</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control has-icons-right">
+                        <input class="input" type="email" placeholder="Эхлэх огноо">
+                        <span class="icon is-small is-right">
+                          <i class="fas fa-calendar"></i>
+                        </span>
+                      </p>
+                      <p class="help">dd/mm/yyyy or mm/yyyy or yyyy)</p>
+                      <p class="help">*Date range is not applicable to Oral History Interviews</p>
+                    </div>
+                    <div class="field-label is-normal">
+                      <label class="label">Дуусах</label>
+                    </div>
+                    <div class="field">
+                      <p class="control has-icons-right">
+                        <input class="input" type="email" placeholder="Дуусах огноо">
+                        <span class="icon is-small is-right">
+                          <i class="fas fa-calendar"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
               <div class="field is-grouped is-grouped-centered  p-t-md">
                 <p class="control">
@@ -227,7 +236,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-start">
-          <div class="footer-brand"><img src="img/mfa-light.png" alt=""></div>
+          <div class="footer-brand"><img src="../../img/mfa-light.png" alt=""></div>
           <div class="footer-nav">
             <ul class="nav-items">
               <li class="nav-item"><a href="contact.html" class="nav-link">Бидэнтэй холбогдох</a></li>
@@ -264,20 +273,16 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/jquery/jquery.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+  <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Owl carousel -->
-  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../../vendor/owl.carousel/owl.carousel.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/script.min.js"></script>
+  <script src="../../js/script.min.js"></script>
 
 </body>
 

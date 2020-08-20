@@ -8,6 +8,9 @@
   font-size: 18px;
   padding: 20px 40px;
 }
+.btn-md{
+  padding: 10px 20px;
+}
 
 .btn-primary {
   background-color: $primary;
@@ -17,6 +20,22 @@
   &:hover {
     background-color: darken($primary, 7.5%) !important;
     border-color: darken($primary, 7.5%) !important;
+    color: white;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
+}
+.btn-main {
+  background-color: $gov-blue;
+  border-color: $gov-blue;
+  color: white;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($gov-blue, 7.5%) !important;
+    border-color: darken($gov-blue, 7.5%) !important;
     color: white;
   }
   &:active,

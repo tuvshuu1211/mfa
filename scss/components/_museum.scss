@@ -36,6 +36,11 @@ section.gallery{
   text-decoration: none;
   text-align: center;
   transition: color .3s ease;
+  background: white;
+  border: 1px solid $gray-300;
+  border-radius: 4px;
+  padding: .875rem;
+  box-sizing: border-box;
   
   .mfa-gallery{
     height: 200px;

@@ -129,4 +129,8 @@
       }
     }
   }
+  &.advanced-type{
+    display: grid !important;
+    grid-template-columns: 270px 270px;;
+  }
 }

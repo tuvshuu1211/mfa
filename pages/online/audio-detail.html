@@ -11,20 +11,21 @@
   <title>MFA</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bulma/css/bulma.min.css" rel="stylesheet">
+  <link href="../../vendor/bulma/css/bulma.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../..//vendor/mediaelement/css/mediaelementplayer.css" />
+  <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Owl Carousel styles -->
-  <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="vendor/owl.carousel/assets/owl.theme.default.css" rel="stylesheet">
+  <link href="../../vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../../vendor/owl.carousel/assets/owl.theme.default.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="../../css/style.min.css" rel="stylesheet">
 
 </head>
 
@@ -43,8 +44,8 @@
     </div>
     <div class="container">
     <div class="navbar-brand">
-      <a class="" href="index.html">
-        <img src="img/mfa-logo.png">
+      <a class="" href="/index.html">
+        <img src="../../img/mfa-logo.png">
         <span> Гадаад харилцааны төв Архив</span>
       </a>
   
@@ -56,44 +57,21 @@
     </div>
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a href="index.html" class="navbar-item">
-            Нүүр
+          <a href="/index.html" class="navbar-item">
+            Цахим хуудас
           </a>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a href="about.html" class="navbar-link">
-              Бидний тухай
-            </a>
-    
-            <div class="navbar-dropdown">
-              <a href="about.html" class="navbar-item">
-                Бүтэц
-              </a>
-              <a class="navbar-item">
-                Бидний түүх
-              </a>
-              <a class="navbar-item">
-                Дүрэм, журам
-              </a>
-              <a class="navbar-item">
-                Архивын хамт олон
-              </a>
-              <a class="navbar-item">
-                Түншлэл
-              </a>
-            </div>
-          </div>
           <a href="blog-list.html" class="navbar-item">
-              Үйл явдлууд
-            </a>
-          <a href="online-archive.html" class="navbar-item">
               Онлайн архив
             </a>
+          <a href="pages/online/index.html" class="navbar-item">
+              Аудио баримтын тухай
+            </a>
           <a href="reading-room.html" class="navbar-item">
-          Уншлагын танхим
+          Түгээмэл асуулт хариулт
         </a>
           <a href="museum.html" class="navbar-item">
-              Музей
+            <i class="fab fa fa-shopping-cart"></i>  Сагс (5)
             </a>
         </div>
     
@@ -114,29 +92,25 @@
             </nav>
       </div>
       
-      
       <div class="container">
         <div class="columns">
-          <div class="column is-one-quarters">
-              <aside class="sidebar box menu">
-                  <p class="side-label">
-                    Биднтий тухай
-                  </p>
-                  <ul class="menu-list">
-                    <li><a href="about.html">Бүрэн эрх / Mandate</a></li>
-                    <li class="active"><a href="about-1.html">Бидний түүх / Our history</a></li>
-                    <li><a href="about-2.html">Бидний зорилго / Our Roles</a></li>
-                    <li><a href="about-3.html">Хэвлэсэн бүтээл / Publications</a></li>
-                    <li><a href="about-4.html">Түншлэл / Partnership</a></li>
-                    <li><a href="about-4.html">Эрх зүйн баримтууд /   Laws/Regulations</a></li>
-                    <li><a href="about-4.html">Холбоо барих / Contact us</a></li>
-                  </ul>
-                </aside>
-          </div>
           <div class="column is-three-quarters">
+
+            <div class="page-action">
+              <div class="page-title">
+                  <h1>АНУ-н дэд ерөнхийлөгчийг угтан авч байгаа нь</h1>
+                </div>
+    
+                <a onClick="window.print()" class="print"><i class="fab fa fa-print"></i></a>
+          </div>
+
             <div class="content-box">
                 <div class="content p-lg">
-                    <h1>Hello World</h1>
+                  <div class="media-record">
+                    <video controls src="../../media/1.mp4" width="320" height="240" type="video/mp4"></video>
+                  </div>
+                  
+                  <h1>Hello World</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
                     <h2>Second level</h2>
                     <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
@@ -149,6 +123,36 @@
                   </div>
             </div>
           </div>
+          <script>
+
+            mejs.i18n.language('de'); // Setting German language
+          
+            $('audio,video').mediaelementplayer({
+              success: function(player, node) {
+          
+                // Optional
+                $(player).closest('.mejs__container').attr('lang', mejs.i18n.language());
+          
+                $('html').attr('lang', mejs.i18n.language());
+          
+                // More code
+              }
+            });
+          </script>
+          <div class="column is-one-quarters">
+            <aside class="sidebar box menu">
+                <p class="side-label">
+                  Хамааралтай баримт
+                </p>
+                <div class="aside-related-records js-content-contain">
+                  <a class="aside-related-record js-repeat">
+                      <div class="record-name">Баримтын гарчиг</div>
+                      <div class="record-id">11901033504</div>
+                      <div class="record-date">2013/12/14</div>
+                  </a>
+                </div>
+              </aside>
+        </div>
         </div>
       </div>
     </div>
@@ -158,7 +162,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-start">
-          <div class="footer-brand"><img src="img/mfa-light.png" alt=""></div>
+          <div class="footer-brand"><img src="../../img/mfa-light.png" alt=""></div>
           <div class="footer-nav">
             <ul class="nav-items">
               <li class="nav-item"><a href="contact.html" class="nav-link">Бидэнтэй холбогдох</a></li>
@@ -195,21 +199,36 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+
+  <script src="../../vendor/mediaelement/js/core/mediaelement.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+  <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Owl carousel -->
-  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../../vendor/owl.carousel/owl.carousel.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/script.min.js"></script>
+  <script src="../../js/script.min.js"></script>
 
+  <script>
+    var galleryLists;
+    var content = $('.js-repeat');
+    function clone(){
+      galleryLists = [];
+      for (let i = 0; i < 5; i++) {
+        galleryLists.push(content)
+      }
+  
+      galleryLists.forEach(list => {
+        var a = $('.js-content-contain');
+        b = list.clone()
+        a.append(b)
+      })
+    }
+    clone();
+  </script>
 </body>
 
 </html>

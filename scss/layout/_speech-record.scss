@@ -1,0 +1,42 @@
+.speechers-list{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1rem;
+  text-align: left;
+  .speecher{
+    // text-align: center;
+    .sp-img{
+      width: 70px;
+      height: 95px;
+      overflow: hidden;
+      // margin: 0 auto;
+      img{
+        display: block;
+        min-width: 100%;
+        width: auto;
+        max-width: none;
+        height: 100%;
+      }
+    }
+    .name{
+      margin-top: .5rem;
+      color: $gov-blue;
+      font-weight: 400;
+    }
+  }
+}
+
+.character-filter{
+  display: flex;
+  a{
+    margin: 0 .75rem;
+    margin-bottom: 1rem;
+    &:first-child{
+      margin-left: 0;
+    }
+    &.active{
+      color: $gray-900;
+      font-weight: 600;
+    }
+  }
+}

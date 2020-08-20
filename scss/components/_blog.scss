@@ -1,17 +1,18 @@
 .box.is-hover{
     transition: all .3s ease-in-out;
+    border-radius: 0;
     .mfa-blog-post{
         display: flex;
         justify-content: space-between;
-        border-radius: 6px;
+        border-radius: 0;
         overflow: hidden;
         border: 0 solid transparent;
         box-sizing: border-box;
         position: relative;
         .mfa-blog-image{
             flex-shrink: 1;
-            width: 280px;
-            height: 265px;
+            width: 250px;
+            height: 200px;
             overflow: hidden;
             position: relative;
             img{
@@ -19,17 +20,19 @@
                 min-width: 100%;
                 min-height: 100%;
                 height: auto;
+                transform: scale(1);
+                transition: transform .3s ease-out;
             }
         }
         .mfa-blog-description{
             flex-shrink: 10;
-            padding: 40px 50px;
+            padding: 30px 50px 0;
             .blog-label{
                 font-size: 1rem;
             }
             .blog-title{
                 color: $black;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 line-height: 2rem;
                 font-weight: 700;
                 margin: .5rem 0 2rem;
@@ -41,24 +44,16 @@
                 }
             }
         }
-    
-        &::after{
-            content: '';
-            position: absolute;
-            border-radius: inherit;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            border: 1px solid transparent;
-            transition: all .2s ease-in-out;
-        }
 
     }   
     &:hover{
         transition: all .5s ease;
         box-shadow: 0 1.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
-       transform: scale(1.02);
+        .mfa-blog-image{
+            img{
+                transform:scale(1.1);
+            }
+        }
     }
 }
 
