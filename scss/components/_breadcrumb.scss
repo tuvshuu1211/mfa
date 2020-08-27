@@ -1,16 +1,26 @@
 // Breadscrumb style
 
 .breadcrumb {
+    margin-top: -1.5rem;
     margin-bottom: 1.5rem;
+    background-color: white;
+    padding: .5rem 1rem;
+    border: 1px solid $gray-200;
     ul{
         li{
             position: relative;
             a{
+                font-size: .875rem;
                 color: $gray-500;
                 padding: 0 1em;
             }
+            &.is-active{
+                a{
+                    font-weight: 700;
+                }
+            }
             &::before {
-                border: 2px solid $gray-900;
+                border: 2px solid $gray-500;
                 border-radius: 1px;
                 border-left: 0;
                 border-top: 0;

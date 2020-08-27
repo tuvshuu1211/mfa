@@ -579,22 +579,34 @@ img::-moz-selection {
   width: 100%;
 }
 
+.online-archive-search .main-search-types {
+  display: flex;
+}
+
 .online-archive-search .main-search-types .main-search-type {
   display: inline-block;
-  padding: 1rem 2rem;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  padding: .75rem 2rem;
   background: #adb5bd;
 }
 
+.online-archive-search .main-search-types .main-search-type:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 0px;
+}
+
+.online-archive-search .main-search-types .main-search-type:last-child {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 6px;
+}
+
 .online-archive-search .main-search-types .main-search-type.active {
-  background: #2477F4;
+  background: #011f3f;
   color: white;
   font-weight: 700;
 }
 
 .online-archive-search .main-search-types .main-search-type.active:hover {
-  background: #3c86f5;
+  background: #012b58;
 }
 
 .online-archive-search .main-search-types .main-search-type a {
@@ -847,7 +859,11 @@ img::-moz-selection {
 }
 
 .breadcrumb {
+  margin-top: -1.5rem;
   margin-bottom: 1.5rem;
+  background-color: white;
+  padding: .5rem 1rem;
+  border: 1px solid #e9ecef;
 }
 
 .breadcrumb ul li {
@@ -855,12 +871,17 @@ img::-moz-selection {
 }
 
 .breadcrumb ul li a {
+  font-size: .875rem;
   color: #adb5bd;
   padding: 0 1em;
 }
 
+.breadcrumb ul li.is-active a {
+  font-weight: 700;
+}
+
 .breadcrumb ul li::before {
-  border: 2px solid #272C30;
+  border: 2px solid #adb5bd;
   border-radius: 1px;
   border-left: 0;
   border-top: 0;
@@ -963,6 +984,7 @@ img::-moz-selection {
 
 .navbar .nav-top-bar .topbar-links .topbar-link {
   padding: 0 1rem;
+  font-weight: 400;
 }
 
 .navbar .nav-top-bar .topbar-links .topbar-link:last-child {
@@ -972,6 +994,7 @@ img::-moz-selection {
 .navbar .nav-top-bar .topbar-links .topbar-link a {
   color: white;
   opacity: .7;
+  font-size: .875rem;
   transition: all .3s ease-in-out;
 }
 
@@ -1285,8 +1308,10 @@ img::-moz-selection {
 }
 
 .field-body.is-vertical label.checkbox {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  padding-right: 2rem;
+  width: 100%;
 }
 
 .field-body.is-vertical label.checkbox input {
@@ -1298,11 +1323,19 @@ img::-moz-selection {
 .field-body.is-vertical label.checkbox .count {
   position: absolute;
   right: 0;
+  float: right;
+  margin-left: 1rem;
+  font-size: .875rem;
+  color: #868e96;
 }
 
 .field-body.advanced-type {
   display: grid !important;
   grid-template-columns: 270px 270px;
+}
+
+.search-record input.is-searched {
+  font-weight: 700;
 }
 
 .mfa-museum {

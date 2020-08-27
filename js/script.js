@@ -149,4 +149,9 @@ function coverFlowEfx(e){
   $('.owl-item').eq(idx + 2).addClass('smallRight');
 }
 
+$(function(){
+  $("#navbar").load("/navbar.html");
+  $("#navbar-oa").load("/navbar-oa.html");
+});
+
 })(jQuery); // End of use strict

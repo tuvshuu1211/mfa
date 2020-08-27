@@ -18,12 +18,14 @@
       float: right;
       .topbar-link{
         padding: 0 1rem;
+        font-weight: 400;
         &:last-child{
           padding-right: 0;
         }
         a{
           color: white;
           opacity: .7;
+          font-size: .875rem;
           @include transition-3s;
           &:hover{
             opacity: 1;

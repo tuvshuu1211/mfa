@@ -1,18 +1,25 @@
 .online-archive-search{
     width: 100%;
     .main-search-types{
+        display: flex;
         .main-search-type{
             display: inline-block;
-            padding: 1rem 2rem;
-            border-top-left-radius: 6px;
-            border-top-right-radius: 6px;
+            padding: .75rem 2rem;
             background: $gray-500;
+            &:first-child{
+                border-top-left-radius: 6px;
+                border-top-right-radius: 0px;
+            }
+            &:last-child{
+                border-top-left-radius: 0px;
+                border-top-right-radius: 6px;
+            }
             &.active{
-                background: $primary;
+                background: $gov-blue;
                 color: white;
                 font-weight: 700;
                 &:hover{
-                    background: lighten($primary, 5%);
+                    background: lighten($gov-blue, 5%);
                 }
             }
             a{

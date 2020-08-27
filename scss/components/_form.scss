@@ -115,8 +115,11 @@
         margin-left: 0;
       }
       &.checkbox{
-        display: flex;
+        display: inline-flex;
         align-items: center;
+        // justify-content: space-between;
+        padding-right: 2rem;
+        width: 100%;
         input{
           height: 1rem;
           width: 1rem;
@@ -125,6 +128,10 @@
         .count{
           position: absolute;
           right: 0;
+          float: right;
+          margin-left: 1rem;
+          font-size: .875rem;
+          color: $gray-600;
         }
       }
     }
@@ -132,5 +139,11 @@
   &.advanced-type{
     display: grid !important;
     grid-template-columns: 270px 270px;;
+  }
+}
+
+.search-record{
+  input.is-searched{
+    font-weight: 700;
   }
 }
