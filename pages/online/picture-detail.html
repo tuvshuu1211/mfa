@@ -12,6 +12,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="../../vendor/bulma/css/bulma.min.css" rel="stylesheet">
+<link href="../../vendor/bulma/css/bulma-tooltip.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -25,6 +26,7 @@
 
   <!-- Custom styles for this template -->
   <link href="../../css/style.min.css" rel="stylesheet">
+  
 
 </head>
 
@@ -135,11 +137,134 @@
                     </tbody>
                   </table>
 
-                  <div class="picture-record">
+                  <!-- <div class="picture-record">
                     <div class="img-protect">
                       <img src="../../img/portfolio/01-full.jpg" alt="">
                     </div>
+                  </div> -->
+                  <div class="picture-record d-flex m-b-md">
+                    <div class="pic-record-zoom">
+                      <button data-zoom-down class="button"><i class="fas fa-minus-circle"></i></button>
+                  <!-- <input data-zoom-range type="range" class="form-control-range"/> -->
+                  <button data-zoom-up class="button"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                
+    
+                <div id="picRecordImg-wrapper">
+                  <div id="picRecordImg">
+                      <div class="myBadge" style="left:900px;top:500px;"></div>
+                      <div class="myBadge" style="left:200px;top:300px;"></div>
+                      <div class="myBadge" style="left:100px;top:800px;"></div>
+                      <div class="myBadge" style="left:9500px;top:340px;"></div>
+                      <div class="myBadge" style="left:500px;top:900px;"></div>
+                      <img id="myImage" src="/img/team.JPG" alt="image"/>
                   </div>
+              </div>
+              <div class="picRecordName-list">
+                <h5>Зурган дээрх хүмүүсийн нэр</h5>
+                <table class="picRecordName-table table is-hoverable">
+                  <thead>
+                    <tr>
+                      <th>Нэр</th>
+                      <th>Албан тушаал</th>
+                      <th>Улс</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                    <tr>
+                      <td>М. Нямбаяр</td>
+                      <td>Төмөр замын дарга</td>
+                      <td>Монгол</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
                   </div>
             </div>
           </div>
@@ -215,6 +340,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="../../js/script.min.js"></script>
+  <script src="../../js/wheel-zoom.min.js"></script>
 
   <script>
     var galleryLists;
@@ -233,6 +359,74 @@
     }
     clone();
   </script>
+
+<script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var imageElement = document.getElementById('picRecordImg').querySelector('img');
+
+        if (imageElement.complete) {
+            init();
+        } else {
+            imageElement.onload = init;
+        }
+
+        function init() {
+            var rangeElement = document.querySelector('[data-zoom-range]');
+
+            var wzoom = WZoom.create('#picRecordImg', {
+                type: 'html',
+                width: 800,
+                height: 500,
+                speed: 6.18,
+                maxScale: 2,
+                width: imageElement.naturalWidth,
+                height: imageElement.naturalHeight,
+                dragScrollableOptions: {
+                    onGrab: function () {
+                        document.getElementById('picRecordImg-wrapper').style.cursor = 'grabbing';
+                    },
+                    onDrop: function () {
+                        document.getElementById('picRecordImg-wrapper').style.cursor = 'grab';
+                    }
+                },
+                prepare: function () {
+                    setTimeout(() => {
+                        rangeElement.min = wzoom.content.minScale;
+                        rangeElement.defaultValue = wzoom.content.minScale;
+                        rangeElement.max = wzoom.content.maxScale;
+                        rangeElement.step = 1 / this.speed;
+                    }, 0);
+                },
+                rescale: function () {
+                    rangeElement.value = wzoom.content.currentScale;
+                }
+            });
+
+            document.querySelector('[data-zoom-up]').addEventListener('click', function () {
+                wzoom.zoomUp();
+            });
+
+            document.querySelector('[data-zoom-down]').addEventListener('click', function () {
+                wzoom.zoomDown();
+            });
+
+            window.addEventListener('resize', function () {
+                wzoom.prepare();
+            });
+
+            rangeElement.addEventListener('input', function () {
+                let newScale = Number(rangeElement.value);
+
+                if (newScale > wzoom.content.currentScale) {
+                    wzoom.zoomUp();
+                } else {
+                    wzoom.zoomDown();
+                }
+            });
+        }
+    });
+</script>
+
 </body>
 
 </html>

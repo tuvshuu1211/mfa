@@ -154,4 +154,15 @@ $(function(){
   $("#navbar-oa").load("/navbar-oa.html");
 });
 
+var tableRow = $('.table.picRecordName-table tr');
+  
+  tableRow.click(function(){
+    // $(this).each(function(){
+    //   if($(this).hasClass('active')){
+    //     $(this).removeClass( "active" );
+    //   }
+    // })
+    $(this).toggleClass( "active" );
+  })
+
 })(jQuery); // End of use strict

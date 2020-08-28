@@ -1,13 +1,98 @@
 .picture-record{
-    margin-top: 1rem;
+    position: relative;
+    height: 100%;
     width: 100%;
-    height: 600px;
-    overflow: scroll;   
-    .img-protect{
-        pointer-events: none;
-        img{
-            width: calc(100% + 200px);
-            max-width: none;
+    .pic-record-zoom{
+        position: absolute;
+        bottom: .5rem;
+        right: .5rem;
+        z-index: 1020;
+        button{
+            background: rgba($color: #000000, $alpha: .8);
+            border: none;
+            i{
+                color: white;
+            }
+        }
+    }
+    #picRecordImg-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        overflow: auto;
+        background: $gray-700;
+        height: 500px;
+        max-height: 500px;
+        box-sizing: border-box;
+        max-height: none !important;
+    }
+    
+    #picRecordImg {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 0;
+    }
+    
+    .myBadge {
+        position: absolute;
+        background: rgba($color: #000000, $alpha: .8);
+        border: solid 4px white;
+        height: 30px;
+        width: 30px;
+        border-radius: 20px;
+        font-size: 80px;
+        box-shadow: 0 4px 10px rgba($color: #000000, $alpha: .8);
+        cursor: pointer;
+    }
+    
+    #myImage {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: auto;
+        align-self: center;
+        flex-shrink: 0;
+        max-width: none !important;
+    }
+}
+.picRecordName-list{
+    margin-top: 1.5rem;
+    height: 500px;
+    overflow: auto;
+}
+table.picRecordName-table{
+    // background: $gray-100;
+    height: 500px;
+    overflow: scroll;
+    position: relative;
+    thead{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: white;
+        tr{
+            width: 100%;
+            th{
+                width: 450px;
+            }
+        }
+    }
+    tbody{
+        margin-top: 60px;
+        overflow-y: auto;
+        height: 500px;
+        tr{
+            cursor: pointer;
+            width: 100%;
+            td{
+                width: 400px;
+            }
+            &.active{
+                background: white;
+                border: 1px solid $primary;
+                font-weight: 700;
+            }
         }
     }
 }

@@ -53,7 +53,8 @@ function modules() {
   //Bulma
   var bulma = gulp.src([
     './node_modules/bulma/**/*',
-    './node_modules/bulma-accordion/dist/**/*'
+    './node_modules/bulma-accordion/dist/**/*',
+    './node_modules/bulma-tooltip/dist/**/*'
   ])
   .pipe(gulp.dest('./vendor/bulma'));
   // Font Awesome CSS
@@ -71,6 +72,9 @@ function modules() {
   // Media Player
   var media = gulp.src('./node_modules/mediaelement/src/**/*')
     .pipe(gulp.dest('./vendor/mediaelement'));
+  // Wheel zoom
+  var zoom = gulp.src('./node_modules/vanilla-js-wheel-zoom/dist/**/*')
+    .pipe(gulp.dest('./vendor/wheel-zoom'));
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
     .pipe(gulp.dest('./vendor/jquery-easing'));
@@ -80,7 +84,7 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bulma, fontAwesomeCSS, fontAwesomeWebfonts, owlCarousel, jquery, jqueryEasing,owlThumb);
+  return merge(bulma, fontAwesomeCSS, fontAwesomeWebfonts, owlCarousel, jquery, jqueryEasing,owlThumb,zoom);
 }
 
 // CSS task

@@ -1497,19 +1497,114 @@ section.gallery {
 }
 
 .picture-record {
-  margin-top: 1rem;
+  position: relative;
+  height: 100%;
   width: 100%;
-  height: 600px;
+}
+
+.picture-record .pic-record-zoom {
+  position: absolute;
+  bottom: .5rem;
+  right: .5rem;
+  z-index: 1020;
+}
+
+.picture-record .pic-record-zoom button {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+}
+
+.picture-record .pic-record-zoom button i {
+  color: white;
+}
+
+.picture-record #picRecordImg-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: auto;
+  background: #495057;
+  height: 500px;
+  max-height: 500px;
+  box-sizing: border-box;
+  max-height: none !important;
+}
+
+.picture-record #picRecordImg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 0;
+}
+
+.picture-record .myBadge {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  border: solid 4px white;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  font-size: 80px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.picture-record #myImage {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: auto;
+  align-self: center;
+  flex-shrink: 0;
+  max-width: none !important;
+}
+
+.picRecordName-list {
+  margin-top: 1.5rem;
+  height: 500px;
+  overflow: auto;
+}
+
+table.picRecordName-table {
+  height: 500px;
   overflow: scroll;
+  position: relative;
 }
 
-.picture-record .img-protect {
-  pointer-events: none;
+table.picRecordName-table thead {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: white;
 }
 
-.picture-record .img-protect img {
-  width: calc(100% + 200px);
-  max-width: none;
+table.picRecordName-table thead tr {
+  width: 100%;
+}
+
+table.picRecordName-table thead tr th {
+  width: 450px;
+}
+
+table.picRecordName-table tbody {
+  margin-top: 60px;
+  overflow-y: auto;
+  height: 500px;
+}
+
+table.picRecordName-table tbody tr {
+  cursor: pointer;
+  width: 100%;
+}
+
+table.picRecordName-table tbody tr td {
+  width: 400px;
+}
+
+table.picRecordName-table tbody tr.active {
+  background: white;
+  border: 1px solid #2477F4;
+  font-weight: 700;
 }
 
 .media-record {

@@ -56,122 +56,118 @@
         <span aria-hidden="true"></span>
       </a>
     </div>
-    <div id="navbar-oa" class="navbar-menu">
-        <div class="navbar-start">
-          <a href="/index.html" class="navbar-item">
-            Цахим хуудас
-          </a>
-
-          <a href="blog-list.html" class="navbar-item">
-              Онлайн архив
-            </a>
-          <a href="pages/online/index.html" class="navbar-item">
-              Харилцааны баримтын тухай
-            </a>
-          <a href="reading-room.html" class="navbar-item">
-          Түгээмэл асуулт хариулт
-        </a>
-          <a href="museum.html" class="navbar-item">
-            <i class="fab fa fa-shopping-cart"></i>  Сагс (5)
-            </a>
-        </div>
-    
-
-      </div>
+    <div id="navbar-oa" class="navbar-menu"> </div>
     </div>
   </nav>
-
-  <div class="container">
-  <section class="hero hero-header-md online-archive">
-    <div class="hero-body">
-        <div class="hero-inner">
-          <div class="hero-title">Онлайн архив</div>
-        </div>
-      </div>
-    </section>
-  </div>
 
   <section class="page-section bg-white hero p-t-sm">
     <div class="hero-body">
       <div class="container is-centered">
         <div class="online-archive-search">
           <div class="main-search-types">
-            <div class="main-search-type active"><a href="#" class="search-link">Энгийн хайлт</a></div>
-            <div class="main-search-type"><a href="advanced-search.html" class="search-link">Нарийвчилсан хайлт</a></div>
+            <div class="main-search-type"><a href="book-record.html" class="search-link">Энгийн хайлт</a></div>
+            <div class="main-search-type active"><a href="book-record-advanced.html" class="search-link">Нарийвчилсан хайлт</a></div>
+            <div class="main-search-type"><a href="book-record-list.html" class="search-link">Баритын жагсаалт</a></div>
           </div>
           <div class="box">
-            <form action="search-result.html" class="mfa-search">
-              <div class="field has-addons">
-                <div class="control  is-expanded">
-                  <input class="input is-medium" type="text" placeholder="Хайлт хийх">
+            <form action="search-result.html" class="p-r-lg">
+              <div class="field is-horizontal m-t-lg">
+                <div class="field-label is-normal">
+                  <label class="label">Хайх утга</label>
                 </div>
-                <div class="control">
-                  <button type="submit" class="button is-red p-l-lg p-r-lg is-medium">
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control has-icons-right">
+                      <input class="input" type="email" placeholder="Дуусах огноо">
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-search"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Эхлэх</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control has-icons-right">
+                      <input class="input" type="email" placeholder="Эхлэх огноо">
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-calendar"></i>
+                      </span>
+                    </p>
+                    <p class="help">dd/mm/yyyy or mm/yyyy or yyyy)</p>
+                    <p class="help">*Date range is not applicable to Oral History Interviews</p>
+                  </div>
+                  <div class="field-label is-normal">
+                    <label class="label">Дуусах</label>
+                  </div>
+                  <div class="field">
+                    <p class="control has-icons-right">
+                      <input class="input" type="email" placeholder="Дуусах огноо">
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-calendar"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Databases</label>
+                  </div>
+                  <div class="field-body is-vertical">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      Цаасан баримт
+                    </label>
+                      
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      Цаасан баримт /1890-1935/
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      Хэлэлцээр
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      Зураг
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      Ярилцлага
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      Ишлэл ба хэвлэлийн мэдээ
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      Ном товхимол
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      Кино, Дүрс бичлэг, Дуу авиа
+                    </label>
+                  </div>
+                </div>
+
+              <div class="field is-grouped is-grouped-centered  p-t-md">
+                <p class="control">
+                  <button type="submit" class="button is-red p-l-lg p-r-lg">
                     Хайх
                   </button>
-                </div>
+                </p>
               </div>
             </form>
           </div>
         </div>
-        <div class="columns is-multiline m-t-lg">
-          <a href="paper-record.html" class="column is-3">
-            <div class="mfa-online-archive-type">
-              <div class="type-title">Цаасан баримт</div>
-              <div class="type-image">
-                <img src="../../img/online-archive/paper-record.png" alt="">
-              </div>
-            </div>
-          </a>
-          <a href="paper-record.html" class="column is-3">
-            <div class="mfa-online-archive-type">
-              <div class="type-title">Цаасан баримт /1890-1935/</div>
-              <div class="type-image">
-                <img src="../../img/online-archive/paper-record2.png" alt="">
-              </div>
-            </div>
-          </a>
-          <a href="paper-record.html" class="column is-3">
-            <div class="mfa-online-archive-type">
-              <div class="type-title">Хэлэлцээр</div>
-              <div class="type-image">
-                <img src="../../img/online-archive/book.png" alt="">
-              </div>
-            </div>
-          </a>
-          <a href="picture-record.html" class="column is-3">
-            <div class="mfa-online-archive-type">
-              <div class="type-title">Зураг</div>
-              <div class="type-image">
-                <img src="../../img/online-archive/contract.png" alt="">
-              </div>
-            </div>
-          </a>
-          <a href="audio-record.html" class="column is-3">
-            <div class="mfa-online-archive-type">
-              <div class="type-title">Ярилцлага</div>
-              <div class="type-image"><img src="../../img/online-archive/picture.png" alt=""></div>
-            </div>
-          </a>
-          <a href="speech-record.html" class="column is-3">
-            <div class="mfa-online-archive-type">
-              <div class="type-title">Ишлэл ба хэвлэлийн мэдээ</div>
-              <div class="type-image"><img src="../../img/online-archive/interview.png" alt=""></div>
-            </div>
-          </a>
-          <a href="book-record.html" class="column is-3">
-            <div class="mfa-online-archive-type">
-              <div class="type-title">Ном товхимол</div>
-              <div class="type-image"><img src="../../img/online-archive/speech.png" alt=""></div>
-            </div>
-          </a>
-          <a href="audio-record.html" class="column is-3">
-            <div class="mfa-online-archive-type">
-              <div class="type-title">кино, дүрс бичлэг, дуу авиа</div>
-              <div class="type-image"><img src="../../img/online-archive/video.png" alt=""></div>
-            </div>
-          </a>
-        </div>
+        
       </div>
     </div>
   </section>
@@ -220,7 +216,7 @@
   <script src="../../vendor/jquery/jquery.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>>
 
   <!-- Owl carousel -->
   <script src="../../vendor/owl.carousel/owl.carousel.min.js"></script>
