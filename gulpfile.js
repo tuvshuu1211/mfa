@@ -118,8 +118,6 @@ function js() {
     .src([
       './js/*.js',
       '!./js/*.min.js',
-      '!./js/contact_me.js',
-      '!./js/jqBootstrapValidation.js'
     ])
     .pipe(uglify())
     .pipe(header(banner, {

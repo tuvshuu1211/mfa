@@ -38,6 +38,93 @@ h6 {
   list-style: none;
 }
 
+.analog-clock{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: #f7f7f7;
+  background-image: url('../img/clock.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 6px solid transparent;
+  box-shadow: 5px 5px 10px rgba($gray-800, $alpha: 0.3),
+              10px 10px 20px rgba($gray-800, $alpha: 0.1),
+              -10px -10px 20px rgba($gray-400, $alpha: 0.1),
+              -10px -10px 20px rgba($gray-400, $alpha: 0.1),
+              inset -5px -5px 20px rgba($gray-900, $alpha: .1),
+              inset 10px 10px 20px rgba(white, $alpha: .9),
+              0 0 0  3px white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after{
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    border: 2px solid #efefef;
+    content: '';
+    border-radius: 50%;
+    background: $gray-900;
+  }
+  .hour, .minute, .second{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hour .hr{
+    width: 60%;
+    height: 60%;
+    // left: 20px;
+  }
+  .minute .mn{
+    width: 70%;
+    height: 70%;
+    // left: 16px;
+  }
+  .second .sc{
+    width: 80%;
+    height: 80%;
+  }
+  .hr, .mn, .sc{
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .hr::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 50%;
+    background: black;
+    border-radius: 8px;
+  }
+  .mn::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    background: $gray-700;
+    border-radius: 8px;
+  }
+  .sc::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 50%;
+    background: red;
+    border-radius: 8px;
+  }
+}
+
 .page-section {
   padding: 100px 0;
   h1.section-heading {

@@ -165,4 +165,23 @@ var tableRow = $('.table.picRecordName-table tr');
     $(this).toggleClass( "active" );
   })
 
+  function clock(){
+    var deg = 6;
+    var hr = $('#hr');
+    var mn = $('#mn');
+    var sc = $('#sc');
+  
+    setInterval( function(){
+      var day = new Date();
+      var hh = day.getHours() * 30;
+      var mm = day.getMinutes() * deg;
+      var ss = day.getSeconds() * deg;
+      hr.css("transform", "rotateZ(" + (hh+(mm/12)) + "deg)");
+      mn.css("transform", "rotateZ(" + mm + "deg)");
+      sc.css("transform", "rotateZ(" + ss + "deg)");
+    })
+  }
+  
+  clock();
+
 })(jQuery); // End of use strict
