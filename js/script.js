@@ -154,16 +154,55 @@ $(function(){
   $("#navbar-oa").load("/navbar-oa.html");
 });
 
-var tableRow = $('.table.picRecordName-table tr');
+var tableRow = $('.table.picRecordName-table tbody');
+var badge = $('.myBadge');
+
+tableRow.children().each(function(){
   
-  tableRow.click(function(){
-    // $(this).each(function(){
-    //   if($(this).hasClass('active')){
-    //     $(this).removeClass( "active" );
-    //   }
-    // })
-    $(this).toggleClass( "active" );
+  $(this).click(function(){
+    $(this).toggleClass('active')
+    
+    if($(this).hasClass('active')){
+
+     var personActive = $(this).data('person');
+
+     badge.removeClass('active')
+     $("#"+personActive).addClass('active')
+
+      $(this).siblings().each(function(){
+        $(this).removeClass('active')
+      })
+    }
   })
+})
+badge.each(function(){
+
+  $(this).click(function(){
+    $(this).toggleClass('active')
+    
+    if($(this).hasClass('active')){
+
+      var personActive = $(this).attr('id');
+      tableRow.children().each(function(){
+        if($(this).attr('id') == personActive){
+         $(this).addClass('active')
+         $(this).siblings().removeClass('active')
+         
+         var personPos = $(this)[0].offsetTop - ($(this)[0].clientHeight + 5);
+          $('.picRecordName-table tbody').animate({
+              scrollTop: personPos
+          }, 500);
+        }
+      });
+      
+      // tableRow.children().removeClass('active')
+ 
+       $(this).siblings().each(function(){
+         $(this).removeClass('active')
+       })
+     }
+  })
+})
 
   function clock(){
     var deg = 6;

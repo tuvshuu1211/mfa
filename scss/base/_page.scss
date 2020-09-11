@@ -150,6 +150,20 @@ h2.section-title{
   padding-left: 50px;
   margin-bottom: 1rem;
 }
+.bullet-primary{
+  position: relative;
+  padding-left: 30px !important;
+  &:after{
+    position: absolute;
+    content: '';
+    background: $red;
+    width: 10px;
+    height: 21px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 .bullet-secondary{
   position: relative;
   &:after{

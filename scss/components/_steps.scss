@@ -1,0 +1,54 @@
+.steps{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    .steps-segment{
+        padding: 0 2rem;
+        text-align: center;
+        position: relative;
+        .steps-marker{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border: 1px solid $gray-300;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            color: $gray-900;
+            margin: 0 auto 1rem;
+            z-index: 1;
+            position: relative;
+        }
+        &::before{
+            top: 27.5px;
+            left: 50%;
+            z-index: 0;
+            position: absolute;
+            content: '';
+            width: 90%;
+            height: 2px;
+            background: $gray-300;
+        }
+        &:last-child{
+            &::before{
+                display: none;
+            }
+        }
+        &.is-done{
+            .steps-marker{
+                border: 1px solid $green;
+                color: $green;
+            }
+            &::before{
+                background: $green;
+            }
+        }
+        &.is-active{
+            .steps-marker{
+                border: 2px solid $gov-blue;
+                color: $gov-blue;
+            }
+        }
+    }
+}

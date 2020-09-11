@@ -16,6 +16,7 @@ $black: #000 !default;
 
 $primary: #2477F4 !default;
 $red: #ED392D !default;
+$green: #27AE60 !default;
 $purple: #5C0EBF !default;
 $bronze: #DEB552 !default;
 $gov-blue: rgb(1, 31, 63) !default;
@@ -26,6 +27,7 @@ $paddingKey: 'p';
 $separator: '-';
 $sizes: (
     ('none', 0),
+    ('auto', auto ),
     ('xxs', 0.125),
     ('xs', 0.25),
     ('sm', 0.5),
@@ -35,6 +37,8 @@ $sizes: (
     ('xxl', 8),
 );
 $positions: (
+    ('x', ''),
+    ('y', 'top','bottom'),
     ('t', 'top'),
     ('r', 'right'),
     ('b', 'bottom'),

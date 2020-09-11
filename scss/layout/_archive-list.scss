@@ -70,3 +70,81 @@
     }
   }
 }
+
+.record-order-list{
+  margin-bottom: 1.5rem;
+  .record-information{
+    display: flex;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 0 0 0 rgba(10,10,10,.1), 0 0 0 0 rgba(10,10,10,.02);
+    transition: all .3s ease-in-out;
+    position: relative;
+    padding-left: 3rem;
+  
+    .checkbox{
+      position: absolute;
+      left: 1.25rem;
+      @include center-y;
+      input{
+        height: 14px;
+        width: 14px;
+      }
+    }
+  
+    .record-img{
+      flex-shrink: 0;
+      flex-grow: 1;
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      background: $white;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .record-desc{
+      margin-left: 1.25rem;
+      flex-shrink: 1;
+      flex-grow: 0;
+      a.title{
+        color: $black;
+        font-size: 1.25rem;
+        &:hover{
+          color: $primary;
+        }
+      }
+      .category{
+        font-size: 0.875rem;
+        margin-bottom: 10px;
+        color: $gray-800;
+      }
+      .short-desc{
+        margin-top: 1rem;
+        font-size: 1rem;
+        color: $gray-900;
+      }
+    }
+    
+  }
+  .order-action{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    padding-left: 4rem;
+    .control{
+      width: 30%;
+      margin-right: 2rem;
+      input{
+        margin-top: .5rem;
+      }
+       label{
+        font-weight: 700;
+      }
+    }
+    .btn-delete{
+      position: absolute;
+      right: 0;
+    }
+  }
+}
