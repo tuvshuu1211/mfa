@@ -35,13 +35,13 @@
     }
   }
   .navbar-brand{
-    width: 222px;
+    width: 230px;
     display: flex;
     align-items: center;
-    a{
+    .brand{
       position: relative;
       width: 100%;
-      span{
+      .logo-name{
         position: absolute;
         padding: 1rem 0 0 .615rem;
         font-size: .725rem;
@@ -161,6 +161,15 @@
           background: none;
           color: $primary;
         }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .navbar-brand{
+      width: auto;
+      align-items: center;
+      .brand{
+        width: 225px;
       }
     }
   }

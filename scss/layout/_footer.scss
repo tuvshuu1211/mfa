@@ -90,4 +90,30 @@ footer.mfa-footer{
           margin: 0 auto;
         }
       }
+      @media(max-width: 769px){
+        background-size: contain;
+        .footer-inner{
+          padding: 0 1rem;
+          text-align: center;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .footer-start{
+            margin-bottom: 1.5rem;
+            .footer-brand{
+            }
+            .footer-nav{
+              .nav-items{
+                flex-direction: column;
+                .nav-item{
+                  padding: 1rem 0;
+                }
+              }
+            }
+          }
+          .footer-right{
+            text-align: center;
+          }
+        }
+      }
 }
