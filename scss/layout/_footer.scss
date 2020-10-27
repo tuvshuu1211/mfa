@@ -21,9 +21,12 @@ footer.mfa-footer{
           flex-direction: row;
           .nav-item{
             padding: 0 .8rem;
+            &:first-child{
+              padding-left: 0;
+            }
             .nav-link{
               color: $gray-400;
-              font-size: 1rem;
+              font-size: .875rem;
             }
             &:last-child{
               padding-right: 0;
@@ -47,6 +50,7 @@ footer.mfa-footer{
           @include transition-3s;
           a{
             color: $gray-600;
+            font-size: .875rem;
           }
           &::after{
             content: '';
@@ -73,9 +77,11 @@ footer.mfa-footer{
       h2{
         color: white;
         margin-bottom: 1rem;
+        font-size: 1rem;
       }
       p{
         color: $gray-600;
+        font-size: .875rem;
       }
     }
   }
@@ -107,6 +113,7 @@ footer.mfa-footer{
                 flex-direction: column;
                 .nav-item{
                   padding: 1rem 0;
+                  
                 }
               }
             }

@@ -229,6 +229,22 @@ h2.section-title{
     }
   }
 }
+.overflow-height{
+  overflow-y: scroll;
+  height: 350px;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+   
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px $gray-300;
+  }
+   
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray-500;
+    border-radius: 10px;
+  }
+}
 
 // Highlight color customization
 ::-moz-selection {

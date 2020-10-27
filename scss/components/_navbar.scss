@@ -63,6 +63,7 @@
     .navbar-item{
       padding: 1.5rem .75rem;
       @include body-font;
+      font-size: 0.95rem;
       color: inherit;
 
       i{
@@ -74,6 +75,7 @@
       }
 
       .navbar-link:not(.is-arrowless){
+        padding-right: 1rem;
         &::after{
           border: 2px solid $gray-300;
           border-radius: 1px;
@@ -82,6 +84,7 @@
           content: " ";
           display: block;
           margin-top: -.3em;
+          right: 0;
           pointer-events: none;
           position: absolute;
           top: 50%;
